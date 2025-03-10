@@ -17,7 +17,7 @@ import { startTokenLifecycle } from './tokenManager.js';
     console.log(fetchedData);
 
     const uspacy = new UspaceManager();
-    const res = uspacy.search({q:'ТОВ "ЛЕАНДРА"'});
+    const res = uspacy.searchCompanyId({q:'ТОВ "ЛЕАНДРА"'});
 
     console.log(await res);
 

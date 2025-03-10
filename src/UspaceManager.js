@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from './tokenManager.js';
 
 class UspaceManager {
-    async search(params) {
+    async searchCompanyId(params) {
         const token = getToken();
         const res = await axios.request({
             method: 'GET',
