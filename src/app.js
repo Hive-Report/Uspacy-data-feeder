@@ -1,6 +1,7 @@
 import 'dotenv/config';
-import axios from 'axios';
-import { startTokenLifecycle, getToken } from './tokenManager.js';
+import UspaceManager from './UspaceManager.js';
+import UakeyManager from './UakeyManager.js';
+import { startTokenLifecycle } from './tokenManager.js';
 
 (async () => {
   try {
@@ -9,21 +10,16 @@ import { startTokenLifecycle, getToken } from './tokenManager.js';
     await startTokenLifecycle();
     console.log('ℹ️ Token lifecycle started.');
 
-    const token = getToken();
-    console.log('ℹ️ Current token:', token);
-
     // Other processes
-    const res = await axios.request({
-      method: 'GET',
-      url: `https://${process.env.SPACE}.uspacy.ua/search/v1/search`,
-      params: {
-        q: 'ТОВ "ЛЕАНДРА"'
-      },
-      headers: {accept: 'application/json', authorization: `Bearer ${token}`}
-    }).catch(err => console.error(err));
+    const parser = new UakeyManager();
+    const USREOU = '27272727';
+    const fetchedData = await parser.fetchUakeyInfo(USREOU);
+    console.log(fetchedData);
 
-    console.log(res.data.data.companies[0].id);
-      
+    const uspacy = new UspaceManager();
+    const res = uspacy.search({q:'ТОВ "ЛЕАНДРА"'});
+
+    console.log(await res);
 
   } catch (err) {
     console.error('❌Error in application:', err);
