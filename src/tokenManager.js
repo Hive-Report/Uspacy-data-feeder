@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 let SESSION_TOKEN = null;
 
@@ -59,7 +59,4 @@ const getToken = () => {
   return SESSION_TOKEN;
 };
 
-module.exports = {
-  startTokenLifecycle,
-  getToken,
-};
+export { startTokenLifecycle, getToken};

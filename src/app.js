@@ -1,6 +1,6 @@
-require('dotenv').config();
-const { default: axios } = require('axios');
-const { startTokenLifecycle, getToken } = require('./tokenManager');
+import 'dotenv/config';
+import axios from 'axios';
+import { startTokenLifecycle, getToken } from './tokenManager.js';
 
 (async () => {
   try {
