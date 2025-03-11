@@ -17,9 +17,15 @@ import { startTokenLifecycle } from './tokenManager.js';
     console.log(fetchedData);
 
     const uspacy = new UspaceManager();
-    const res = uspacy.searchCompanyId({q:'ТОВ "ЛЕАНДРА"'});
+    
+    const res = await uspacy.search('ТОВ "ЛЕАНДРА"');
+    console.log(res);
 
-    console.log(await res);
+    const testComp = await uspacy.getEntity('companies', '9987');
+    console.log(testComp); //uf_crm_1632905074 is a company USREOU
+
+    const resEditEntity = await uspacy.editEntityItem('companies', '9987', 'uf_crm_1632905074', 1111);
+    console.log(resEditEntity);
 
   } catch (err) {
     console.error('❌Error in application:', err);
