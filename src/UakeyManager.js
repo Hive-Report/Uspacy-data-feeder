@@ -5,7 +5,7 @@ class UakeyManager {
         try {
           const optionsFetch = {
             method: 'GET',
-            url: `http://${process.env.PARSER}/api/uakey/${toString(USREOU)}`,
+            url: `${process.env.PARSER}/api/uakey/${toString(USREOU)}`,
             headers: { accept: 'application/json', 'content-type': 'application/json' },
           };
           const res = await axios.request(optionsFetch);
