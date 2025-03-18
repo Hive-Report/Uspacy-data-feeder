@@ -25,6 +25,7 @@ class UspaceManager {
 
     async search(param) {
         if (typeof param !== 'string') param = String(param);
+
         const options = {
             method: 'GET',
             url: `https://${process.env.SPACE}.uspacy.ua/search/v1/search`,
@@ -49,6 +50,7 @@ class UspaceManager {
 
     async getEntityFields(entity) {
         if (typeof entity !== 'string') entity = String(entity);
+
         const options = {
             method: 'GET',
             url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/${entity}/fields`
@@ -58,9 +60,10 @@ class UspaceManager {
         return res.data.data;
     }
 
-    async getEntityFieldByCode(entity, code) {
+    async getEntityFieldByItemCode(entity, code) {
         if (typeof entity !== 'string') entity = String(entity);
         if (typeof code !== 'string') code = String(code);
+
         const options = {
             method: 'GET',
             url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/${entity}/fields/${code}`
@@ -73,6 +76,7 @@ class UspaceManager {
     async getEntity(entity, itemId) {
         if (typeof entity !== 'string') entity = String(entity);
         if (typeof itemId !== 'string') itemId = String(itemId);
+
         const options = {
             method: 'GET',
             url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/${entity}/${itemId}`
@@ -86,10 +90,44 @@ class UspaceManager {
         if (typeof entity !== 'string') entity = String(entity);
         if (typeof field !== 'string') field = String(field);
         if (typeof value !== 'string') value = String(value);
+
         const options = {
             method: 'PATCH',
-            url: `https://domain.uspacy.ua/crm/v1/entities/${entity}/${itemId}`,
+            url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/${entity}/${itemId}`,
             data: {[field]: value}
+        };
+        const res = await this.sendRequest(options);
+
+        return res.data;
+    }
+
+    async getKEPsByCompany(companyId) {
+        if (typeof companyId !== 'string') companyId = String(companyId);
+
+        const options = {
+            method: 'GET',
+            url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/companies/${companyId}/related/keps/`
+        };
+        const res = await this.sendRequest(options);
+
+        return res.data.data;
+    }
+
+    async createKEPEntityForCompany(companyId, title, owner, data_formuvannya, data_zakinchennya, na_cloudkey) {
+        if (typeof companyId !== 'string') companyId = String(companyId);
+        if (typeof title !== 'string') title = String(title);
+        if (typeof owner !== 'string') owner = String(owner);
+
+        const options = {
+            method: 'POST',
+            url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/keps`,
+            data: {
+                title: title,
+                owner: owner,
+                data_formuvannya: data_formuvannya,
+                data_zakinchennya: data_zakinchennya,
+                na_cloudkey: na_cloudkey
+            }
         };
         const res = await this.sendRequest(options);
 
