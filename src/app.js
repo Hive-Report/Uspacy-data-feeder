@@ -1,77 +1,66 @@
 import 'dotenv/config';
-import UspaceManager from './UspaceManager.js';
-import UakeyManager from './UakeyManager.js';
 import { startTokenLifecycle } from './tokenManager.js';
+import Danylo from './Danylo.js';
+import pLimit from 'p-limit';
+import fs from 'node:fs';  // Імпортуємо модуль для запису в файл
 
-function extractUSREOU(html) {
-  const match = html.match(/\b\d{8,}\b/);
-  
-  if (match) {
-      return match[0];
-  } else {
-      console.error("Error: Unable to find correct EDRPOU.");
-      return null;
-  }
-}
+// Відкриваємо потоки для запису в файли
+const logStream = fs.createWriteStream('output.log', { flags: 'a' });
+const errorStream = fs.createWriteStream('error.log', { flags: 'a' });
 
-function convertToTimestamp(dateStr) {
-  const [day, month, year] = dateStr.split('.').map(Number);
-  
-  const date = new Date(year, month - 1, day);
+// Перенаправляємо console.log та console.error на файли
+console.log = (...args) => {
+  logStream.write(args.join(' ') + '\n');
+  process.stdout.write(args.join(' ') + '\n'); // Також виводимо в термінал
+};
 
-  return Math.floor(date.getTime() / 1000);
-}
+console.error = (...args) => {
+  errorStream.write(args.join(' ') + '\n');
+  process.stderr.write(args.join(' ') + '\n'); // Також виводимо в термінал
+};
 
 (async () => {
   try {
-    console.log('Starting application...');
-    
+    console.log('🚀 Starting application...');
+
     await startTokenLifecycle();
     console.log('ℹ️ Token lifecycle started.');
 
-    // Other processes
-    const parser = new UakeyManager();
-    const uspacy = new UspaceManager();
+    const worker = new Danylo();
 
-    // I try to find company ID and update all KEPs linked with the company
-    let USREOU = "";
-    let companyId = "";
+    const companyIds = Array.from({ length: 13894 }, (_, i) => i + 1); 
 
-    // const testCompanyName = "АСК \"УКРРІЧФЛОТ\"";
-    const testCompanyName = "Тест Тестович";
+    const limit = pLimit(6);
 
-    companyId = (await uspacy.search(testCompanyName)).companies[0].id;
-    if (!companyId) throw new Error('Company ID was not found!');
+    // Масив для зберігання компаній, де виникли помилки
+    const failedCompanies = [];
 
-    let KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`Before deleting: ${KEPsInUspacy}`);
+    const updatePromises = companyIds.map((companyId) =>
+      limit(async () => {
+        try {
+          await worker.updateKEPs(companyId);
+          console.log(`✅ KEPs updated for company ${companyId}`);
+        } catch (err) {
+          console.error(`❌ Error updating KEPs for company ${companyId}:`, err);
 
-    for (let KEP of KEPsInUspacy) {
-      await uspacy.deleteKEP(KEP.id);
+          // Додаємо компанію до списку помилок
+          failedCompanies.push(companyId);
+        }
+      })
+    );
+
+    // Очікуємо завершення всіх оновлень
+    await Promise.all(updatePromises);
+
+    // Якщо є невдалі спроби, записуємо їх у файл
+    if (failedCompanies.length > 0) {
+      const failedLog = `Failed companies:\n${failedCompanies.join('\n')}`;
+      fs.writeFileSync('failed_companies.txt', failedLog, 'utf-8');
+      console.log(`📝 Failed companies logged to 'failed_companies.txt'`);
     }
 
-    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`After deleting: ${KEPsInUspacy}`);
-
-    USREOU = extractUSREOU((await uspacy.getEntity('companies', companyId)).uf_crm_1632905074);
-    if (!USREOU) throw new Error('Company USREOU code was not found!');
-    console.log(`USREOU: ${USREOU}`);
-
-    const paresdCerts = await parser.fetchUakeyInfo(USREOU);
-    if (!paresdCerts) throw new Error("Uakey parsing failed.")
-    if (paresdCerts.uakey[USREOU].certs.length === 0) throw new Error("KEPS was not found.");
-    const certsArray = paresdCerts.uakey[USREOU].certs || [];
-    const signingCerts = certsArray.filter(cert => cert.certType === "Підписання");
-    console.log(signingCerts);
-
-    for (let cert of signingCerts) {
-      await uspacy.createKEPEntityForCompany(companyId, cert.name, 7, convertToTimestamp(cert.startDate), convertToTimestamp(cert.endDate), cert.cloudkey);
-    }
-
-
-    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`Result: ${KEPsInUspacy}`);
+    console.log('🎉 Finished successfully!');
   } catch (err) {
-    console.error('❌Error in application:', err);
+    console.error('❌ Error in application:', err);
   }
 })();
