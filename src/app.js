@@ -33,21 +33,6 @@ function convertToTimestamp(dateStr) {
     const parser = new UakeyManager();
     const uspacy = new UspaceManager();
 
-    // const USREOU = '27272727';
-    // const fetchedData = await parser.fetchUakeyInfo(USREOU);
-    // console.log(fetchedData);    
-    
-    // const res = await uspacy.search('ТОВ "ЛЕАНДРА"');
-    // console.log(res);
-
-    // const testComp = await uspacy.getEntity('companies', '9987');
-    // console.log(testComp); //uf_crm_1632905074 is a company USREOU
-
-    // const resEditEntity = await uspacy.editEntityItem('companies', '9987', 'uf_crm_1632905074', 1111);
-    // console.log(resEditEntity);
-
-
-
     // I try to find company ID and update all KEPs linked with the company
     let USREOU = "";
     let companyId = "";
@@ -57,17 +42,35 @@ function convertToTimestamp(dateStr) {
 
     companyId = (await uspacy.search(testCompanyName)).companies[0].id;
     if (!companyId) throw new Error('Company ID was not found!');
+
+    let KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
+    console.log(`Before deleting: ${KEPsInUspacy}`);
+
+    for (let KEP of KEPsInUspacy) {
+      await uspacy.deleteKEP(KEP.id);
+    }
+
+    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
+    console.log(`After deleting: ${KEPsInUspacy}`);
+
     USREOU = extractUSREOU((await uspacy.getEntity('companies', companyId)).uf_crm_1632905074);
     if (!USREOU) throw new Error('Company USREOU code was not found!');
     console.log(`USREOU: ${USREOU}`);
 
-    const paresdKEPs = await parser.fetchUakeyInfo(USREOU);
-    const resAfterCreateKEPEntity = await uspacy.createKEPEntityForCompany(companyId, 'testByProg', '7', convertToTimestamp("18.03.2025"), convertToTimestamp("17.03.2026"), true);
+    const paresdCerts = await parser.fetchUakeyInfo(USREOU);
+    if (!paresdCerts) throw new Error("Uakey parsing failed.")
+    if (paresdCerts.uakey[USREOU].certs.length === 0) throw new Error("KEPS was not found.");
+    const certsArray = paresdCerts.uakey[USREOU].certs || [];
+    const signingCerts = certsArray.filter(cert => cert.certType === "Підписання");
+    console.log(signingCerts);
 
-    const KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
+    for (let cert of signingCerts) {
+      await uspacy.createKEPEntityForCompany(companyId, cert.name, 7, convertToTimestamp(cert.startDate), convertToTimestamp(cert.endDate), cert.cloudkey);
+    }
 
-    console.log(KEPsInUspacy);
-    console.log(resAfterCreateKEPEntity);
+
+    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
+    console.log(`Result: ${KEPsInUspacy}`);
   } catch (err) {
     console.error('❌Error in application:', err);
   }

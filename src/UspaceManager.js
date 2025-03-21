@@ -113,6 +113,16 @@ class UspaceManager {
         return res.data.data;
     }
 
+    async deleteKEP(itemId) {
+        const options = {
+            method: 'DELETE',
+            url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/keps/${itemId}`
+        };
+        const res = await this.sendRequest(options);
+
+        return res.data;
+    }
+
     async createKEPEntityForCompany(companyId, title, owner, data_formuvannya, data_zakinchennya, na_cloudkey) {
         if (typeof companyId !== 'string') companyId = String(companyId);
         if (typeof title !== 'string') title = String(title);
@@ -127,7 +137,7 @@ class UspaceManager {
                 data_formuvannya: data_formuvannya,
                 data_zakinchennya: data_zakinchennya,
                 na_cloudkey: na_cloudkey,
-                kompaniya: {id: 1}
+                kompaniya: {id: companyId}
             }
         };
         const res = await this.sendRequest(options);
