@@ -38,8 +38,17 @@ console.error = (...args) => {
     const updatePromises = companyIds.map((companyId) =>
       limit(async () => {
         try {
-          await worker.updateKEPs(companyId);
-          console.log(`✅ KEPs updated for company ${companyId}`);
+          let counter = 0;
+          let res = await worker.updateKEPs(companyId);
+          while (res == 1 && counter < 10) {
+            res = await worker.updateKEPs(companyId);
+            counter++;
+          }
+          if (res != 1){
+            console.log(`✅ KEPs updated for company ${companyId}`);
+          } else {
+            failedCompanies.push(companyId);
+          }
         } catch (err) {
           console.error(`❌ Error updating KEPs for company ${companyId}:`, err);
 

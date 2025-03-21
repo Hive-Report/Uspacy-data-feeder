@@ -6,7 +6,7 @@ class Danylo {
         const match = html.match(/\b\d{8,}\b/);
         if (match) return match[0];
 
-        console.error("Error: Unable to find correct USREOU.");
+        console.error("Error: Unable to find correct USREOU.", html);
         return null;
     }
       
@@ -22,7 +22,7 @@ class Danylo {
         try {
             const entity = await uspacy.getEntity('companies', companyId);
             const USREOU = this.extractUSREOU(entity.uf_crm_1632905074);
-            if (!USREOU) throw new Error('Company USREOU code was not found!');
+            if (!USREOU) throw new Error('Company USREOU code was not found!', USREOU);
     
             const oldKEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
             if (!oldKEPsInUspacy) throw new Error("Failed to fetch old KEPs from Uspacy.");
@@ -51,7 +51,7 @@ class Danylo {
     
             // Check old KEPs and parsed KEPs
             if (isKEPsIdentical(oldKEPsInUspacy, signingCerts)) {
-                console.log("✅ No changes in KEPs. Skipping update.");
+                console.log("✅ No changes in KEPs. Skipping update. ", companyId);
                 return null;
             }
     
@@ -72,11 +72,11 @@ class Danylo {
                 );
             }
     
-            console.log("✅ KEPs successfully updated.");
+            console.log("✅ KEPs successfully updated. " , companyId);
             return true;
         } catch (err) {
             console.error("❌ Danylo has no ability to update KEPs:", err.message || err);
-            return null;
+            return 1;
         }
     }    
 }
