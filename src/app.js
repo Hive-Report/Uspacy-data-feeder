@@ -67,11 +67,7 @@ function convertToTimestamp(dateStr) {
     const KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
 
     console.log(KEPsInUspacy);
-    console.log(resAfterCreateKEPEntity); // I cannot add relationship with company
-
-    console.log(await uspacy.getEntity('companies', '9987')); 
-
-
+    console.log(resAfterCreateKEPEntity);
   } catch (err) {
     console.error('❌Error in application:', err);
   }

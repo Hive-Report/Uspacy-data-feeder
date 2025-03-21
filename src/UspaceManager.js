@@ -123,10 +123,11 @@ class UspaceManager {
             url: `https://${process.env.SPACE}.uspacy.ua/crm/v1/entities/keps`,
             data: {
                 title: title,
-                owner: owner,
+                owner: owner, // is not necessery
                 data_formuvannya: data_formuvannya,
                 data_zakinchennya: data_zakinchennya,
-                na_cloudkey: na_cloudkey
+                na_cloudkey: na_cloudkey,
+                kompaniya: {id: 1}
             }
         };
         const res = await this.sendRequest(options);
