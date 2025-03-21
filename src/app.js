@@ -30,42 +30,8 @@ console.error = (...args) => {
 
     const companyIds = Array.from({ length: 13894 }, (_, i) => i + 1); 
 
-    const limit = pLimit(6);
-
-    // Масив для зберігання компаній, де виникли помилки
-    const failedCompanies = [];
-
-    const updatePromises = companyIds.map((companyId) =>
-      limit(async () => {
-        try {
-          let counter = 0;
-          let res = await worker.updateKEPs(companyId);
-          while (res == 1 && counter < 10) {
-            res = await worker.updateKEPs(companyId);
-            counter++;
-          }
-          if (res != 1){
-            console.log(`✅ KEPs updated for company ${companyId}`);
-          } else {
-            failedCompanies.push(companyId);
-          }
-        } catch (err) {
-          console.error(`❌ Error updating KEPs for company ${companyId}:`, err);
-
-          // Додаємо компанію до списку помилок
-          failedCompanies.push(companyId);
-        }
-      })
-    );
-
-    // Очікуємо завершення всіх оновлень
-    await Promise.all(updatePromises);
-
-    // Якщо є невдалі спроби, записуємо їх у файл
-    if (failedCompanies.length > 0) {
-      const failedLog = `Failed companies:\n${failedCompanies.join('\n')}`;
-      fs.writeFileSync('failed_companies.txt', failedLog, 'utf-8');
-      console.log(`📝 Failed companies logged to 'failed_companies.txt'`);
+    for (let i = 1; i < 13894; i++) {
+      await worker.updateKEPs(i);
     }
 
     console.log('🎉 Finished successfully!');
