@@ -33,18 +33,19 @@ class Danylo {
         return hashCompanyIds;
     }
 
-    async updateAllKEPs(amount) {
+    async updateAllKEPs(startId, endId) {
         const chunk = 50;
         let processed = 0;
         
         try {
-            for (let i = 1; i < (amount + 1); i += chunk) {
-                console.log(`ℹ️ Processing companies from ${i} to ${Math.min(i + chunk - 1, amount)}. Remaining: ${amount - processed} companies.`);
+            for (let i = startId; i <= endId; i += chunk) {
+                const currentChunkEnd = Math.min(i + chunk - 1, endId);
+                console.log(`ℹ️ Processing companies from ${i} to ${currentChunkEnd}. Remaining: ${endId - i + 1} companies.`);
                 
-                let hashCompanyIds = await this.getHashCompaniesTable(i, chunk);
+                let hashCompanyIds = await this.getHashCompaniesTable(i, Math.min(chunk, endId - i + 1));
                 if (!hashCompanyIds || hashCompanyIds.size === 0) {
-                    console.error(`❌ No companies found or hashCompanyIds is empty in range ${i}-${i+chunk-1}.`);
-                    processed += chunk;
+                    console.error(`❌ No companies found or hashCompanyIds is empty in range ${i}-${currentChunkEnd}.`);
+                    processed += Math.min(chunk, endId - i + 1);
                     continue;
                 }
                 
@@ -154,7 +155,7 @@ class Danylo {
             console.log(`🏁 Processing complete: Processed ${processed} companies in total.`);
             return true;
         } catch (err) {
-            console.error(`❌ Fatal error in updateAllKEPs:`, err.message || err);
+            console.error(`❌ Fatal error in updateAllKEPs for range ${startId}-${endId}:`, err.message || err);
             return null;
         }
     }

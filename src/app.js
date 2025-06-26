@@ -23,9 +23,31 @@ console.error = (...args) => {
     await startTokenLifecycle();
     console.log('ℹ️ Token lifecycle started.');
 
-    const worker = new Danylo();
-    const amount = 14156; // Set the desired amount of companies to process
-    await worker.updateAllKEPs(amount);
+    const amount = 14156; // Загальна кількість компаній
+    const processed = 800;  // Вже оброблені компанії
+    const remaining = amount - processed;
+    
+    console.log(`ℹ️ ${processed} companies already processed. Processing remaining ${remaining} companies in parallel.`);
+    
+    const threadCount = 4;
+    
+    const companiesPerThread = Math.ceil(remaining / threadCount);
+    
+    const workers = [];
+    
+    for (let i = 0; i < threadCount; i++) {
+      const startId = processed + 1 + (i * companiesPerThread);
+      const endId = Math.min(processed + ((i + 1) * companiesPerThread), amount);
+      
+      if (startId <= endId) {
+        console.log(`🧵 Starting worker ${i+1} for companies ${startId} to ${endId}`);
+        const worker = new Danylo();
+        workers.push(worker.updateAllKEPs(startId, endId));
+      }
+    }
+    
+    // Чекаємо завершення всіх потоків
+    await Promise.all(workers);
 
     console.log('🎉 Finished successfully!');
   } catch (err) {
