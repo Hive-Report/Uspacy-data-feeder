@@ -1,22 +1,19 @@
 import 'dotenv/config';
 import { startTokenLifecycle } from './tokenManager.js';
 import Danylo from './Danylo.js';
-import pLimit from 'p-limit';
-import fs from 'node:fs';  // Імпортуємо модуль для запису в файл
+import fs from 'node:fs';
 
-// Відкриваємо потоки для запису в файли
-const logStream = fs.createWriteStream('output.log', { flags: 'a' });
-const errorStream = fs.createWriteStream('error.log', { flags: 'a' });
+const logStream = fs.createWriteStream('output.log', { flags: 'a', encoding: 'utf8' });
+const errorStream = fs.createWriteStream('error.log', { flags: 'a', encoding: 'utf8' });
 
-// Перенаправляємо console.log та console.error на файли
 console.log = (...args) => {
   logStream.write(args.join(' ') + '\n');
-  process.stdout.write(args.join(' ') + '\n'); // Також виводимо в термінал
+  process.stdout.write(args.join(' ') + '\n');
 };
 
 console.error = (...args) => {
   errorStream.write(args.join(' ') + '\n');
-  process.stderr.write(args.join(' ') + '\n'); // Також виводимо в термінал
+  process.stderr.write(args.join(' ') + '\n');
 };
 
 (async () => {
@@ -27,12 +24,8 @@ console.error = (...args) => {
     console.log('ℹ️ Token lifecycle started.');
 
     const worker = new Danylo();
-
-    const companyIds = Array.from({ length: 13894 }, (_, i) => i + 1); 
-
-    for (let i = 1; i < 13894; i++) {
-      await worker.updateKEPs(i);
-    }
+    const amount = 14156; // Set the desired amount of companies to process
+    await worker.updateAllKEPs(amount);
 
     console.log('🎉 Finished successfully!');
   } catch (err) {

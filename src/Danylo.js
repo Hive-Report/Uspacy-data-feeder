@@ -2,6 +2,11 @@ import UspaceManager from "./UspaceManager.js";
 import UakeyManager from './UakeyManager.js';
 
 class Danylo {
+    constructor() {
+        this.parser = new UakeyManager();
+        this.uspace = new UspaceManager();
+    }
+
     extractUSREOU(html) {
         const match = html.match(/\b\d{8,}\b/);
         if (match) return match[0];
@@ -15,70 +20,144 @@ class Danylo {
         return Math.floor(new Date(year, month - 1, day).getTime() / 1000);
     }
 
-    async updateKEPs(companyId) {
-        const parser = new UakeyManager();
-        const uspacy = new UspaceManager();
-    
-        try {
-            const entity = await uspacy.getEntity('companies', companyId);
+    async getHashCompaniesTable(start, chunk = 50) {
+        const hashCompanyIds = new Map();
+        for (let i = start; i < start + chunk; i++) {
+            const entity = await this.uspace.getEntity('companies', i);
             const USREOU = this.extractUSREOU(entity.uf_crm_1632905074);
-            if (!USREOU) throw new Error('Company USREOU code was not found!', USREOU);
-    
-            const oldKEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-            if (!oldKEPsInUspacy) throw new Error("Failed to fetch old KEPs from Uspacy.");
-    
-            const parsedCerts = await parser.fetchUakeyInfo(USREOU);
-            if (!parsedCerts) throw new Error("Uakey parsing failed.");
-            if (!parsedCerts.uakey[USREOU]) throw new Error(`No data found for USREOU: ${USREOU}`);
-            if (!parsedCerts.uakey[USREOU]?.certs?.length) throw new Error("KEPs were not found.");
-    
-            const signingCerts = parsedCerts.uakey[USREOU].certs.filter(cert => cert.certType === "Підписання");
-    
-            // Compare function
-            const isKEPsIdentical = (KEPsInUspacy, signingCerts) => {
-                if (!Array.isArray(KEPsInUspacy) || !Array.isArray(signingCerts)) return false;
-                if (KEPsInUspacy.length !== signingCerts.length) return false;
-                for (let i = 0; i < KEPsInUspacy.length; i++) {
-                    if (!(
-                        KEPsInUspacy[i].title === signingCerts[i]?.name &&
-                        KEPsInUspacy[i].data_formuvannya === this.convertToTimestamp(signingCerts[i]?.startDate) &&
-                        KEPsInUspacy[i].data_zakinchennya === this.convertToTimestamp(signingCerts[i]?.endDate) &&
-                        KEPsInUspacy[i].na_cloudkey === signingCerts[i]?.cloudkey
-                    )) return false;
+            console.log(`Processing company ID: ${i}, USREOU: ${USREOU}`);
+            if (USREOU) {
+                hashCompanyIds.set(i, USREOU);
+            }
+        }
+        return hashCompanyIds;
+    }
+
+    async updateAllKEPs(amount) {
+        const chunk = 50;
+        let processed = 0;
+        
+        try {
+            for (let i = 1; i < (amount + 1); i += chunk) {
+                console.log(`ℹ️ Processing companies from ${i} to ${Math.min(i + chunk - 1, amount)}. Remaining: ${amount - processed} companies.`);
+                
+                let hashCompanyIds = await this.getHashCompaniesTable(i, chunk);
+                if (!hashCompanyIds || hashCompanyIds.size === 0) {
+                    console.error(`❌ No companies found or hashCompanyIds is empty in range ${i}-${i+chunk-1}.`);
+                    processed += chunk;
+                    continue;
                 }
-                return true;
-            };
-    
-            // Check old KEPs and parsed KEPs
-            if (isKEPsIdentical(oldKEPsInUspacy, signingCerts)) {
-                console.log("✅ No changes in KEPs. Skipping update. ", companyId);
-                return null;
+                
+                const USREOUList = Array.from(hashCompanyIds.values());
+                const parsedCerts = await this.parser.fetchMassiveUakeyInfo(USREOUList);
+                console.log(`ℹ️ Fetched Uakey data for ${JSON.stringify(parsedCerts, null, 2)} USREOU values.`);
+
+                let updatedCount = 0;
+                for (const [companyId, USREOU] of hashCompanyIds) {
+                    try {
+                        const oldKEPsInUspacy = await this.uspace.getKEPsByCompany(companyId);
+                        if (!oldKEPsInUspacy) {
+                            console.error(`❌ Failed to fetch old KEPs from Uspacy for company ${companyId}.`);
+                            continue;
+                        }
+
+                        // Переконуємося, що порівнюємо в одному форматі
+                        const searchUSREOU = String(USREOU).trim();
+                        let companyData = parsedCerts.uakey.find(item => 
+                            String(item.code).trim() === searchUSREOU
+                        );
+
+                        // Додаткова перевірка, якщо точний пошук не спрацював
+                        if (!companyData) {
+                            console.log(`🔍 No exact match for USREOU ${USREOU}, trying alternative search...`);
+                            const possibleMatches = parsedCerts.uakey.filter(item => 
+                                String(item.code).includes(searchUSREOU) || 
+                                searchUSREOU.includes(String(item.code))
+                            );
+                            
+                            if (possibleMatches.length === 1) {
+                                console.log(`✅ Found alternative match: ${possibleMatches[0].code}`);
+                                companyData = possibleMatches[0];
+                            } else if (possibleMatches.length > 1) {
+                                console.error(`❌ Multiple possible matches for USREOU ${USREOU}: ${possibleMatches.map(m => m.code).join(', ')}`);
+                            }
+                        }
+
+                        if (!companyData || !companyData.certs || companyData.certs.length === 0) {
+                            console.error(`❌ No certificate data found for company ${companyId} with USREOU ${USREOU}.`);
+                            continue;
+                        }
+
+                        const signingCerts = companyData.certs.filter(cert => 
+                            cert && cert.certType && 
+                            (cert.certType.toLowerCase().includes("підп") || 
+                             cert.certType.includes("╨Я╤Ц╨┤╨┐"))
+                        );
+
+                        if (signingCerts.length === 0) {
+                            console.error(`❌ No signing certificates found for company ${companyId} with USREOU ${USREOU}.`);
+                            continue;
+                        }
+
+                        const isKEPsIdentical = (KEPsInUspacy, signingCerts) => {
+                            if (!Array.isArray(KEPsInUspacy) || !Array.isArray(signingCerts)) return false;
+                            if (KEPsInUspacy.length !== signingCerts.length) return false;
+                            for (let i = 0; i < KEPsInUspacy.length; i++) {
+                                if (!(
+                                    KEPsInUspacy[i].title === signingCerts[i]?.name &&
+                                    KEPsInUspacy[i].data_formuvannya === this.convertToTimestamp(signingCerts[i]?.startDate) &&
+                                    KEPsInUspacy[i].data_zakinchennya === this.convertToTimestamp(signingCerts[i]?.endDate) &&
+                                    KEPsInUspacy[i].na_cloudkey === signingCerts[i]?.cloudkey
+                                )) return false;
+                            }
+                            return true;
+                        };
+                        
+                        // Check old KEPs and parsed KEPs
+                        if (isKEPsIdentical(oldKEPsInUspacy, signingCerts)) {
+                            console.log(`✅ No changes in KEPs for company ${companyId} with USREOU ${USREOU}. Skipping update.`);
+                            continue;
+                        }
+                
+                        // Deleting old KEPs
+                        for (let KEP of oldKEPsInUspacy) {
+                            await this.uspace.deleteKEP(KEP.id);
+                        }
+                
+                        console.log(`🔍 Saving KEPs for company ${companyId} (${USREOU})`);
+                        console.log(`   Found ${signingCerts.length} certificates for saving`);
+
+                        // Adding new KEPs
+                        for (let cert of signingCerts) {
+                            console.log(`   - Saving certificate: ${cert.name}`);
+                            await this.uspace.createKEPEntityForCompany(
+                                companyId,
+                                cert.name,
+                                7,
+                                this.convertToTimestamp(cert.startDate),
+                                this.convertToTimestamp(cert.endDate),
+                                cert.cloudkey
+                            );
+                        }
+                
+                        console.log(`✅ KEPs successfully updated for company ${companyId} with USREOU ${USREOU}`);
+                        updatedCount++;
+                    } catch (companyError) {
+                        console.error(`❌ Error updating KEPs for company ${companyId}:`, companyError.message || companyError);
+                    }
+                }
+                
+                processed += hashCompanyIds.size;
+                console.log(`📊 Chunk complete: Updated ${updatedCount} companies in this chunk.`);
             }
-    
-            // Deleting old KEPs
-            for (let KEP of oldKEPsInUspacy) {
-                await uspacy.deleteKEP(KEP.id);
-            }
-    
-            // Adding new KEPs
-            for (let cert of signingCerts) {
-                await uspacy.createKEPEntityForCompany(
-                    companyId,
-                    cert.name,
-                    7,
-                    this.convertToTimestamp(cert.startDate),
-                    this.convertToTimestamp(cert.endDate),
-                    cert.cloudkey
-                );
-            }
-    
-            console.log("✅ KEPs successfully updated. " , companyId);
+            
+            console.log(`🏁 Processing complete: Processed ${processed} companies in total.`);
             return true;
         } catch (err) {
-            console.error("❌ Danylo has no ability to update KEPs:", err.message || err);
-            return 1;
+            console.error(`❌ Fatal error in updateAllKEPs:`, err.message || err);
+            return null;
         }
-    }    
+    }
 }
 
 export default Danylo;
