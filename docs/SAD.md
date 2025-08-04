@@ -50,3 +50,4 @@
 
 ## 4. Архітектура системи (огляд)
 
+![System Architecture Diagram](pictures/System%20Architecture%20diagram.png)
