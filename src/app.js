@@ -1,6 +1,8 @@
 import 'dotenv/config';
 import { startTokenLifecycle } from './tokenManager.js';
 import Danylo from './Danylo.js';
+import UakeyManager from './UakeyManager.js';
+import UspaceManager from './UspaceManager.js';
 import fs from 'node:fs';
 
 const logStream = fs.createWriteStream('output.log', { flags: 'a', encoding: 'utf8' });
@@ -24,26 +26,26 @@ console.error = (...args) => {
     console.log('ℹ️ Token lifecycle started.');
 
     const amount = 14156; // Загальна кількість компаній
-    const processed = 800;  // Вже оброблені компанії
+    const processed = 0;  // Вже оброблені компанії
     const remaining = amount - processed;
     
     console.log(`ℹ️ ${processed} companies already processed. Processing remaining ${remaining} companies in parallel.`);
     
-    const threadCount = 4;
+    const threadCount = 6;
     
     const companiesPerThread = Math.ceil(remaining / threadCount);
     
     const workers = [];
     
     for (let i = 0; i < threadCount; i++) {
-      const startId = processed + 1 + (i * companiesPerThread);
-      const endId = Math.min(processed + ((i + 1) * companiesPerThread), amount);
-      
-      if (startId <= endId) {
-        console.log(`🧵 Starting worker ${i+1} for companies ${startId} to ${endId}`);
-        const worker = new Danylo();
-        workers.push(worker.updateAllKEPs(startId, endId));
-      }
+      const startId = processed + 1 + i * companiesPerThread;
+      const endId = Math.min(processed + (i + 1) * companiesPerThread, amount);
+      if (startId > endId) continue;
+
+      const worker = new Danylo();
+      worker.parser = new UakeyManager();
+      worker.uspace = new UspaceManager();
+      workers.push(worker.updateAllKEPs(startId, endId));
     }
     
     // Чекаємо завершення всіх потоків

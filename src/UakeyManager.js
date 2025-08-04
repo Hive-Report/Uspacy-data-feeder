@@ -18,7 +18,7 @@ class UakeyManager {
             return null;
         }
     }
-    async fetchMassiveUakeyInfo(USREOUList) {
+    async fetchMassiveUakeyInfo(USREOUList, retry = 1) {
         try {
             const optionsFetch = {
                 method: 'POST',
@@ -31,11 +31,13 @@ class UakeyManager {
                     usreou_list: Array.isArray(USREOUList) ? USREOUList : [String(USREOUList)]
                 }
             };
-            
-            console.log('ℹ️ Fetching massive Uakey data for USREOUList:', JSON.stringify(optionsFetch, null, 2));
             const res = await axios.request(optionsFetch);
             return res.data;
         } catch (err) {
+            if (err.response && err.response.status === 404 && retry > 0) {
+                console.error('❌ 404 from Uakey, retrying...');
+                return this.fetchMassiveUakeyInfo(USREOUList, retry - 1);
+            }
             console.error('❌ Error fetching massive Uakey data:', err);
             return null;
         }

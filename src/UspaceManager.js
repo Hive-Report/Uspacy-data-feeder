@@ -2,23 +2,19 @@ import axios from "axios";
 import { getToken } from './tokenManager.js';
 
 class UspaceManager {
-    async sendRequest(options) {
-        const token = getToken();
-    
-        options.headers = {
-            ...options.headers,
-            accept: 'application/json',
-            authorization: `Bearer ${token}`
-        };
-    
-        if (['POST', 'PUT', 'PATCH'].includes(options.method?.toUpperCase())) {
-            options.headers['Content-Type'] = 'application/json';
-        }
-    
+    async sendRequest(options, retry = 4) {
         try {
-            return await axios.request(options);
+            // ...додаємо токен...
+            const token = getToken();
+            options.headers = { ...options.headers, Authorization: `Bearer ${token}` };
+            const res = await axios.request(options);
+            return res;
         } catch (err) {
-            console.error(err);
+            if (err.response && err.response.status === 404 && retry > 0) {
+                console.error('❌ 404 from Uspacy, refreshing token and retrying...');
+                await getToken(); // Оновлюємо токен
+                return this.sendRequest(options, retry - 1);
+            }
             throw err;
         }
     }
