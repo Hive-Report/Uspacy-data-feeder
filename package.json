@@ -2,11 +2,14 @@
   "name": "uakey-uspacy-integration",
   "version": "1.0.0",
   "description": "Saves parsed information in Uspacy.",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "node src/app",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/app.js"
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsx watch src/app.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
   },
   "author": "",
   "license": "ISC",
@@ -14,9 +17,20 @@
   "dependencies": {
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
-    "fs": "^0.0.1-security"
-  },  
+    "fs": "^0.0.1-security",
+    "winston": "^3.17.0"
+  },
   "devDependencies": {
-    "nodemon": "^3.0.0"
+    "@types/node": "^24.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-prettier": "^5.5.3",
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
   }
 }
