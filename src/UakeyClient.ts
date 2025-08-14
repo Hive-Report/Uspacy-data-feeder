@@ -1,7 +1,7 @@
 import axios from "axios";
 import { config } from "./config.js";
 
-class UakeyManager {
+class UakeyClient {
   async fetchUakeyInfo(USREOU: string) {
     try {
       const optionsFetch = {
@@ -19,4 +19,4 @@ class UakeyManager {
   }
 }
 
-export default UakeyManager;
+export default UakeyClient;

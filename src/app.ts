@@ -1,6 +1,6 @@
-import UspaceManager from "./UspaceManager.js";
-import UakeyManager from "./UakeyManager.js";
-import { startTokenLifecycle } from "./tokenManager.js";
+import UspaceClient from "./UspaceClient.js";
+import UakeyClient from "./UakeyClient.js";
+import { startTokenLifecycle } from "./UspacyTokenManager.js";
 import { config } from "./config.js";
 
 // Types
@@ -22,7 +22,7 @@ function extractUSREOU(html: string): string | null {
   return null;
 }
 
-function convertToTimestamp(dateStr: string): number {
+function convertDDMMYYYYToTimestamp(dateStr: string): number {
   const [day, month, year] = dateStr.split(".").map(Number);
 
   if (!day || !month || !year) {
@@ -42,8 +42,8 @@ function convertToTimestamp(dateStr: string): number {
     console.log("ℹ️ Token lifecycle started.");
 
     // Other processes
-    const parser = new UakeyManager();
-    const uspacy = new UspaceManager();
+    const parser = new UakeyClient();
+    const uspacy = new UspaceClient();
 
     // I try to find company ID and update all KEPs linked with the company
     let USREOU = "";
@@ -92,8 +92,8 @@ function convertToTimestamp(dateStr: string): number {
         companyId,
         cert.name,
         7,
-        convertToTimestamp(cert.startDate),
-        convertToTimestamp(cert.endDate),
+        convertDDMMYYYYToTimestamp(cert.startDate),
+        convertDDMMYYYYToTimestamp(cert.endDate),
         cert.cloudkey,
       );
     }

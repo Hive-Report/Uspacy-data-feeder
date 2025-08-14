@@ -1,6 +1,6 @@
 import axios from "axios";
 import type { AxiosRequestConfig, AxiosResponse } from "axios";
-import { getToken } from "./tokenManager.js";
+import { getToken } from "./UspacyTokenManager.js";
 import { config } from "./config.js";
 
 interface RequestOptions extends AxiosRequestConfig {
@@ -10,7 +10,7 @@ interface RequestOptions extends AxiosRequestConfig {
   data?: any;
 }
 
-class UspaceManager {
+class UspaceClient {
   async sendRequest(options: RequestOptions): Promise<AxiosResponse> {
     const token = getToken();
 
@@ -193,4 +193,4 @@ class UspaceManager {
   }
 }
 
-export default UspaceManager;
+export default UspaceClient;
