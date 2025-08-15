@@ -1,5 +1,8 @@
+import { createLogger } from "../logger/index.js";
 import type { Cert, KEPStorageType } from "../types.js";
 import { convertDDMMYYYYToTimestamp } from "../utils.js";
+
+const logger = createLogger("KEPCertMapper");
 
 export interface KEPCRMDto {
   title: string;
@@ -14,8 +17,8 @@ export class KEPCertMapper {
     return {
       title: cert.name,
       owner: 7,
-      data_formuvannya: cert.start_date ? convertDDMMYYYYToTimestamp(cert.start_date) : 0,
-      data_zakinchennya: cert.end_date ? convertDDMMYYYYToTimestamp(cert.start_date) : 0,
+      data_formuvannya: cert.start_date ? Date.parse(cert.start_date) / 1000 : 0,
+      data_zakinchennya: cert.end_date ? Date.parse(cert.end_date) / 1000 : 0,
       nosiy: cert.storage_type as KEPStorageType,
     };
   }

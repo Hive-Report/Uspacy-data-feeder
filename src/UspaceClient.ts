@@ -17,7 +17,7 @@ const logger = createLogger("UspaceClient");
 
 class UspaceClient {
   async sendRequest(options: RequestOptions): Promise<AxiosResponse> {
-    const token = UspacyTokenManager.getToken();
+    const token = await UspacyTokenManager.getToken();
 
     options.headers = {
       ...options.headers,

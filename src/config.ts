@@ -32,4 +32,6 @@ export const config = {
   CERT_SERVICE: required("CERT_SERVICE", process.env.CERT_SERVICE),
   ADMIN_EMAIL: required("ADMIN_EMAIL", process.env.ADMIN_EMAIL),
   ADMIN_PASSWORD: required("ADMIN_PASSWORD", process.env.ADMIN_PASSWORD),
+  SERVICE_ACCOUNT_PATH: required("SERVICE_ACCOUNT_PATH", process.env.SERVICE_ACCOUNT_PATH),
+  GOOGLE_CLIENT_ID: required("GOOGLE_CLIENT_ID", process.env.GOOGLE_CLIENT_ID),
 };

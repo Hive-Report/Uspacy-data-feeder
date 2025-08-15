@@ -60,7 +60,7 @@ class UspacyTokenManager {
     }
   }
 
-  static getToken(): string {
+  static async getToken(): Promise<string> {
     if (!UspacyTokenManager.SESSION_TOKEN) {
       throw new Error("❌Token is not initialized yet.");
     }
