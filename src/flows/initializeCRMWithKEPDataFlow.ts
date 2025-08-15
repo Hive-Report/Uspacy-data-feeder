@@ -59,6 +59,7 @@ class initializeCRMWithKEPDataFlow implements Flow {
           owner: kep.owner,
           data_formuvannya: kep.data_formuvannya,
           data_zakinchennya: kep.data_zakinchennya,
+          tip: kep.tip,
           nosiy: kep.nosiy,
         }));
 
@@ -68,7 +69,7 @@ class initializeCRMWithKEPDataFlow implements Flow {
             return true;
           }
           const sortFn = (x: (typeof a)[0]) =>
-            `${x.title}|${x.owner}|${x.data_formuvannya}|${x.data_zakinchennya}|${x.nosiy}`;
+            `${x.title}|${x.owner}|${x.data_formuvannya}|${x.data_zakinchennya}|${x.nosiy}|${x.tip}`;
           const aSorted = a.map(sortFn).sort();
           const bSorted = b.map(sortFn).sort();
           return JSON.stringify(aSorted) !== JSON.stringify(bSorted);
@@ -84,7 +85,8 @@ class initializeCRMWithKEPDataFlow implements Flow {
               dto.title,
               dto.owner,
               dto.data_formuvannya,
-              dto.data_zakinchennya,
+              dto.data_zakinchennya,              
+              dto.tip,
               dto.nosiy,
             );
           }

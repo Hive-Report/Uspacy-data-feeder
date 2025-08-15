@@ -168,6 +168,7 @@ class UspaceClient {
     owner: string | number,
     data_formuvannya: number,
     data_zakinchennya: number,
+    tip: string,
     nosiy: KEPStorageType,
   ): Promise<any> {
     if (typeof companyId !== "string") {
@@ -188,6 +189,7 @@ class UspaceClient {
         owner,
         data_formuvannya,
         data_zakinchennya,
+        tip,
         nosiy,
         kompaniya: { id: companyId },
       },
