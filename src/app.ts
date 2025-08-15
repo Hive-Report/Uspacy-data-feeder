@@ -1,7 +1,8 @@
 import UspaceClient from "./UspaceClient.js";
 import UakeyClient from "./UakeyClient.js";
-import { startTokenLifecycle } from "./UspacyTokenManager.js";
+import UspacyTokenManager from "./UspacyTokenManager.js";
 import { config } from "./config.js";
+import { createLogger } from "./logger/index.js";
 
 // Types
 interface Certificate {
@@ -18,7 +19,7 @@ function extractUSREOU(html: string): string | null {
   if (match) {
     return match[0];
   }
-  console.error("Error: Unable to find correct EDRPOU.");
+  logger.error("Error: Unable to find correct EDRPOU.");
   return null;
 }
 
@@ -34,12 +35,14 @@ function convertDDMMYYYYToTimestamp(dateStr: string): number {
   return Math.floor(date.getTime() / 1000);
 }
 
+const logger = createLogger("Server");
+
 (async () => {
   try {
-    console.log("Starting application...");
+    logger.info("Starting application...");
 
-    await startTokenLifecycle();
-    console.log("ℹ️ Token lifecycle started.");
+    await UspacyTokenManager.startTokenLifecycle();
+    logger.info("ℹ️ Token lifecycle started.");
 
     // Other processes
     const parser = new UakeyClient();
@@ -58,14 +61,14 @@ function convertDDMMYYYYToTimestamp(dateStr: string): number {
     }
 
     let KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`Before deleting: ${KEPsInUspacy}`);
+    logger.info(`Before deleting: ${KEPsInUspacy}`);
 
     for (const KEP of KEPsInUspacy) {
       await uspacy.deleteKEP(KEP.id);
     }
 
     KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`After deleting: ${KEPsInUspacy}`);
+    logger.info(`After deleting: ${KEPsInUspacy}`);
 
     const extractedUSREOU = extractUSREOU(
       (await uspacy.getEntity("companies", companyId)).uf_crm_1632905074,
@@ -74,7 +77,7 @@ function convertDDMMYYYYToTimestamp(dateStr: string): number {
       throw new Error("Company USREOU code was not found!");
     }
     USREOU = extractedUSREOU;
-    console.log(`USREOU: ${USREOU}`);
+    logger.info(`USREOU: ${USREOU}`);
 
     const paresdCerts = await parser.fetchUakeyInfo(USREOU);
     if (!paresdCerts) {
@@ -85,7 +88,7 @@ function convertDDMMYYYYToTimestamp(dateStr: string): number {
     }
     const certsArray: Certificate[] = paresdCerts.uakey[USREOU].certs || [];
     const signingCerts = certsArray.filter((cert: Certificate) => cert.certType === "Підписання");
-    console.log(signingCerts);
+    logger.info(signingCerts);
 
     for (const cert of signingCerts) {
       await uspacy.createKEPEntityForCompany(
@@ -99,8 +102,8 @@ function convertDDMMYYYYToTimestamp(dateStr: string): number {
     }
 
     KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    console.log(`Result: ${KEPsInUspacy}`);
+    logger.info(`Result: ${KEPsInUspacy}`);
   } catch (err) {
-    console.error("❌Error in application:", err);
+    logger.error("❌Error in application:", err);
   }
 })();

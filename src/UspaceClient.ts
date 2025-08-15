@@ -2,6 +2,8 @@ import axios from "axios";
 import type { AxiosRequestConfig, AxiosResponse } from "axios";
 import { getToken } from "./UspacyTokenManager.js";
 import { config } from "./config.js";
+import { createLogger } from './logger/index.js';
+import { extractUSREOU } from "./utils.js";
 
 interface RequestOptions extends AxiosRequestConfig {
   method: string;
@@ -9,6 +11,8 @@ interface RequestOptions extends AxiosRequestConfig {
   params?: any;
   data?: any;
 }
+
+const logger = createLogger('UspaceClient');
 
 class UspaceClient {
   async sendRequest(options: RequestOptions): Promise<AxiosResponse> {
@@ -27,7 +31,7 @@ class UspaceClient {
     try {
       return await axios.request(options);
     } catch (err) {
-      console.error(err);
+      logger.error(err);
       throw err;
     }
   }
@@ -190,6 +194,26 @@ class UspaceClient {
     const res = await this.sendRequest(options);
 
     return res.data;
+  }
+
+  async identifyCompany(companyName: string): Promise<string> {
+      const companyId = (await this.search(companyName)).companies[0]?.id;
+      if (!companyId) {
+          logger.error('Company ID was not found for company:', companyName);
+          throw new Error('Company ID was not found for company: ' + companyName);
+      }
+      logger.info(`Company ID found: ${companyId} for company ${companyName}`);
+      return companyId;
+  }
+
+  async getCompanyUSREOU(companyId: string | number): Promise<string> {
+    const USREOU = extractUSREOU((await this.getEntity('companies', companyId)).uf_crm_1632905074);
+    if (!USREOU) {
+      logger.error('Company USREOU code was not found for company ID:', companyId);
+      throw new Error('Company USREOU code was not found for company ID: ' + companyId);
+    }
+
+    return USREOU;
   }
 }
 

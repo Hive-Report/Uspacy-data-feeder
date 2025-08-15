@@ -1,10 +1,14 @@
+import { createLogger } from "./logger/index.js";
+
+const logger = createLogger("Utils");
+
 export function extractUSREOU(html: string): string | null {
   const match = html.match(/\b\d{8,}\b/);
 
   if (match) {
     return match[0];
   }
-  console.error("Error: Unable to find correct USREOU.");
+  logger.error("Error: Unable to find correct USREOU.");
   return null;
 }
 

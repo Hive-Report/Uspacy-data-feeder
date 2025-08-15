@@ -1,8 +1,10 @@
 import axios from "axios";
-import type { TokenManager } from "./types.js";
 import { config } from "./config.js";
+import { createLogger } from "./logger/index.js";
 
-class UspacyTokenManager implements TokenManager {
+const logger = createLogger("UspacyTokenManager");
+
+class UspacyTokenManager {
   private static SESSION_TOKEN: string | null = null;
 
   static async startTokenLifecycle(): Promise<void> {
@@ -19,8 +21,8 @@ class UspacyTokenManager implements TokenManager {
         UspacyTokenManager.SESSION_TOKEN = res.data.refreshToken;
         const expireInSeconds = res.data.expireInSeconds;
 
-        console.log("ℹ️ New token fetched.");
-        console.log(`⏳Token will expire in ${expireInSeconds} seconds.`);
+        logger.info("ℹ️ New token fetched.");
+        logger.debug(`⏳Token will expire in ${expireInSeconds} seconds.`);
 
         setTimeout(refreshToken, (expireInSeconds - 5) * 1000);
       };
@@ -37,20 +39,20 @@ class UspacyTokenManager implements TokenManager {
           UspacyTokenManager.SESSION_TOKEN = res.data.refreshToken;
           const expireInSeconds = res.data.expireInSeconds;
 
-          console.log("ℹ️ Token refreshed.");
-          console.log(`⏳Token will expire in ${expireInSeconds} seconds.`);
+          logger.info("ℹ️ Token refreshed.");
+          logger.debug(`⏳Token will expire in ${expireInSeconds} seconds.`);
 
           setTimeout(refreshToken, (expireInSeconds - 5) * 1000);
         } catch (err) {
-          console.error("❌Error refreshing token:", err);
-          console.log("🔁Retrying fetch token...");
+          logger.error("❌Error refreshing token:", err);
+          logger.info("🔁Retrying fetch token...");
           await fetchToken();
         }
       };
 
       await fetchToken();
     } catch (err) {
-      console.error("❌Error starting token lifecycle:", err);
+      logger.error("❌Error starting token lifecycle:", err);
       process.exit(1);
     }
   };

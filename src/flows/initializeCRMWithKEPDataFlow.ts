@@ -3,24 +3,28 @@ import type { Flow } from '../types.js';
 import type UakeyClient from '../UakeyClient.js';
 import type UspaceClient from '../UspaceClient.js';
 import { extractUSREOU } from '../utils.js';
-import { startTokenLifecycle } from '../UspacyTokenManager.js';
 
 const logger = createLogger('initializeCRMWithKEPDataFlow');
 
 class initializeCRMWithKEPDataFlow implements Flow {
-    private CRMClient: UspaceClient;
+    private UspaceClient: UspaceClient;
     private UakeyClient: UakeyClient;
 
-    constructor() {
-        this.CRMClient = new UspaceClient();
-        this.UakeyClient = new UakeyClient();
+    constructor(UspaceClient: UspaceClient, UakeyClient: UakeyClient) {
+        this.UspaceClient = UspaceClient;
+        this.UakeyClient = UakeyClient;
     }
 
     async execute(): Promise<void> {
         try {
-            logger.info("Starting initializeCRMWithKEPDataFlow...");
+            const companyId = await this.UspaceClient.identifyCompany('Тест Тестович'); //debug company name
+            const USREOU = await this.UspaceClient.getCompanyUSREOU(companyId);
 
-            await 
+            const fetchedUakeyCerts = await this.UakeyClient.fetchUakeyInfo(USREOU);
+            if (!fetchedUakeyCerts || fetchedUakeyCerts.length === 0) {
+                logger.error('KEPS were not found for the company:', companyId);
+                throw new Error('KEPS were not found for the company.' + companyId);
+            }
         } catch (error) {
             logger.error('Error executing initializeCRMWithKEPDataFlow:', error);
             throw error;
