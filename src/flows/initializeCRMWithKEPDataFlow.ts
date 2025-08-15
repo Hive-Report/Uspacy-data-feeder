@@ -3,7 +3,6 @@ import type { Flow, Cert, KEPStorageType } from "../types.js";
 import type UakeyClient from "../UakeyClient.js";
 import type UspaceClient from "../UspaceClient.js";
 import { KEPCertMapper } from "../mappers/KEPCertMapper.js";
-import { log } from "console";
 
 const logger = createLogger("initializeCRMWithKEPDataFlow");
 
@@ -22,9 +21,9 @@ class initializeCRMWithKEPDataFlow implements Flow {
     this.UakeyClient = UakeyClient;
   }
 
-  async execute(): Promise<void> {
+  async execute(startCompanyId: number, endCompanyId: number): Promise<void> {
     try {
-      for (let companyId = 1; companyId <= 14253; companyId++) {
+      for (let companyId = startCompanyId; companyId <= endCompanyId; companyId++) {
         logger.info(`Processing company with ID: ${companyId}`);
         let USREOU: string | undefined;
         try {
@@ -80,15 +79,29 @@ class initializeCRMWithKEPDataFlow implements Flow {
             await this.UspaceClient.deleteKEP(kep.id);
           }
           for (const dto of uakeyDtos) {
-            await this.UspaceClient.createKEPEntityForCompany(
-              companyId,
-              dto.title,
-              dto.owner,
-              dto.data_formuvannya,
-              dto.data_zakinchennya,              
-              dto.tip,
-              dto.nosiy,
-            );
+            let attempts = 0;
+            const MAX_ATTEMPTS = 3;
+            let success = false;
+            while (attempts < MAX_ATTEMPTS && !success) {
+              try {
+                await this.UspaceClient.createKEPEntityForCompany(
+                  companyId,
+                  dto.title,
+                  dto.owner,
+                  dto.data_formuvannya,
+                  dto.data_zakinchennya,
+                  dto.tip,
+                  dto.nosiy,
+                );
+                success = true;
+              } catch (err) {
+                attempts++;
+                logger.warn(`Attempt ${attempts} failed to create KEP for company ${companyId}:`, err);
+                if (attempts === MAX_ATTEMPTS) {
+                  logger.error(`Failed to create KEP for company ${companyId} after ${MAX_ATTEMPTS} attempts.`);
+                }
+              }
+            }
           }
           logger.info("CRM KEPs updated for company:", companyId);
           const KEPsInUspacy = await this.UspaceClient.getKEPsByCompany(companyId);
