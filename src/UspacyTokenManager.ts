@@ -32,7 +32,10 @@ class UspacyTokenManager {
           const optionsRefresh = {
             method: "POST",
             url: `https://${config.SPACE}.uspacy.ua/auth/v1/auth/refresh_token`,
-            headers: { accept: "application/json", authorization: `Bearer ${UspacyTokenManager.SESSION_TOKEN}` },
+            headers: {
+              accept: "application/json",
+              authorization: `Bearer ${UspacyTokenManager.SESSION_TOKEN}`,
+            },
           };
 
           const res = await axios.request(optionsRefresh);
@@ -55,7 +58,7 @@ class UspacyTokenManager {
       logger.error("❌Error starting token lifecycle:", err);
       process.exit(1);
     }
-  };
+  }
 
   static getToken(): string {
     if (!UspacyTokenManager.SESSION_TOKEN) {

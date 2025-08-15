@@ -3,37 +3,8 @@ import UakeyClient from "./UakeyClient.js";
 import UspacyTokenManager from "./UspacyTokenManager.js";
 import { config } from "./config.js";
 import { createLogger } from "./logger/index.js";
+import initializeCRMWithKEPDataFlow from "./flows/initializeCRMWithKEPDataFlow.js";
 
-// Types
-interface Certificate {
-  name: string;
-  certType: string;
-  startDate: string;
-  endDate: string;
-  cloudkey: boolean;
-}
-
-function extractUSREOU(html: string): string | null {
-  const match = html.match(/\b\d{8,}\b/);
-
-  if (match) {
-    return match[0];
-  }
-  logger.error("Error: Unable to find correct EDRPOU.");
-  return null;
-}
-
-function convertDDMMYYYYToTimestamp(dateStr: string): number {
-  const [day, month, year] = dateStr.split(".").map(Number);
-
-  if (!day || !month || !year) {
-    throw new Error(`Invalid date format: ${dateStr}`);
-  }
-
-  const date = new Date(year, month - 1, day);
-
-  return Math.floor(date.getTime() / 1000);
-}
 
 const logger = createLogger("Server");
 
@@ -48,61 +19,10 @@ const logger = createLogger("Server");
     const parser = new UakeyClient();
     const uspacy = new UspaceClient();
 
-    // I try to find company ID and update all KEPs linked with the company
-    let USREOU = "";
-    let companyId = "";
+    const initKEPFlow = new initializeCRMWithKEPDataFlow(uspacy, parser);
+    await initKEPFlow.execute();
 
-    // const testCompanyName = "АСК \"УКРРІЧФЛОТ\"";
-    const testCompanyName = "Тест Тестович";
-
-    companyId = (await uspacy.search(testCompanyName)).companies[0].id;
-    if (!companyId) {
-      throw new Error("Company ID was not found!");
-    }
-
-    let KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    logger.info(`Before deleting: ${KEPsInUspacy}`);
-
-    for (const KEP of KEPsInUspacy) {
-      await uspacy.deleteKEP(KEP.id);
-    }
-
-    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    logger.info(`After deleting: ${KEPsInUspacy}`);
-
-    const extractedUSREOU = extractUSREOU(
-      (await uspacy.getEntity("companies", companyId)).uf_crm_1632905074,
-    );
-    if (!extractedUSREOU) {
-      throw new Error("Company USREOU code was not found!");
-    }
-    USREOU = extractedUSREOU;
-    logger.info(`USREOU: ${USREOU}`);
-
-    const paresdCerts = await parser.fetchUakeyInfo(USREOU);
-    if (!paresdCerts) {
-      throw new Error("Uakey parsing failed.");
-    }
-    if (paresdCerts.uakey[USREOU].certs.length === 0) {
-      throw new Error("KEPS was not found.");
-    }
-    const certsArray: Certificate[] = paresdCerts.uakey[USREOU].certs || [];
-    const signingCerts = certsArray.filter((cert: Certificate) => cert.certType === "Підписання");
-    logger.info(signingCerts);
-
-    for (const cert of signingCerts) {
-      await uspacy.createKEPEntityForCompany(
-        companyId,
-        cert.name,
-        7,
-        convertDDMMYYYYToTimestamp(cert.startDate),
-        convertDDMMYYYYToTimestamp(cert.endDate),
-        cert.cloudkey,
-      );
-    }
-
-    KEPsInUspacy = await uspacy.getKEPsByCompany(companyId);
-    logger.info(`Result: ${KEPsInUspacy}`);
+    logger.info("✅ Application initialized successfully.");
   } catch (err) {
     logger.error("❌Error in application:", err);
   }

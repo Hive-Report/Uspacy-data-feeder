@@ -1,0 +1,140 @@
+2025-08-15 20:52:21 [info]: [Server] Starting application...
+2025-08-15 20:52:21 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 20:52:21 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 20:52:21 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 20:52:23 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 20:52:23 [error]: [UakeyClient] AggregateError
+    at AxiosError.from (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/AxiosError.js:92:14)
+    at RedirectableRequest.handleRequestError (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:620:25)
+    at RedirectableRequest.emit (node:events:518:28)
+    at eventHandlers.<computed> (C:\My Source Code\Особисті проєкти\Danylo\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:103:11)
+    at Socket.socketErrorListener (node:_http_client:506:5)
+    at Socket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:18:19)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:52:23 [error]: [initializeCRMWithKEPDataFlow] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:52:23 [error]: [Server] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:52:24 [info]: [Server] Starting application...
+2025-08-15 20:52:24 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 20:52:24 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 20:52:24 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 20:52:24 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 20:52:24 [error]: [UakeyClient] AggregateError
+    at AxiosError.from (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/AxiosError.js:92:14)
+    at RedirectableRequest.handleRequestError (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:620:25)
+    at RedirectableRequest.emit (node:events:518:28)
+    at eventHandlers.<computed> (C:\My Source Code\Особисті проєкти\Danylo\node_modules\follow-redirects\index.js:49:24)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:103:11)
+    at Socket.socketErrorListener (node:_http_client:506:5)
+    at Socket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:18:19)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:52:24 [error]: [initializeCRMWithKEPDataFlow] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:52:24 [error]: [Server] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:54:24 [info]: [Server] Starting application...
+2025-08-15 20:54:25 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 20:54:25 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 20:54:25 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 20:54:25 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 20:54:25 [error]: [UakeyClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at BrotliDecompress.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at BrotliDecompress.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:18:19)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:54:25 [error]: [initializeCRMWithKEPDataFlow] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:54:25 [error]: [Server] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:27 [info]: [Server] Starting application...
+2025-08-15 20:55:27 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 20:55:27 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 20:55:27 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 20:55:27 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 20:55:28 [error]: [UakeyClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at BrotliDecompress.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at BrotliDecompress.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:18:19)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:28 [error]: [initializeCRMWithKEPDataFlow] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:28 [error]: [Server] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:50 [info]: [Server] Starting application...
+2025-08-15 20:55:50 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 20:55:50 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 20:55:50 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 20:55:50 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 20:55:51 [error]: [UakeyClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at BrotliDecompress.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at BrotliDecompress.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:18:19)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:51 [error]: [initializeCRMWithKEPDataFlow] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 20:55:51 [error]: [Server] Error: Failed to fetch Uakey data
+    at UakeyClient.fetchUakeyInfo (C:\My Source Code\Особисті проєкти\Danylo\src\UakeyClient.ts:23:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)

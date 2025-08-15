@@ -1,11 +1,11 @@
 import axios from "axios";
 import { config } from "./config.js";
 import type { Cert } from "./types.js";
-import { createLogger } from './logger/index.js';
+import { createLogger } from "./logger/index.js";
 
 type UakeyResponse = Cert[];
 
-const logger = createLogger('UakeyClient');
+const logger = createLogger("UakeyClient");
 
 class UakeyClient {
   async fetchUakeyInfo(USREOU: string): Promise<UakeyResponse> {
@@ -20,7 +20,7 @@ class UakeyClient {
       return res.data as UakeyResponse;
     } catch (err) {
       logger.error("❌Error fetch Uakey data:", err);
-      process.exit(1);
+      throw new Error("Failed to fetch Uakey data");
     }
   }
 }

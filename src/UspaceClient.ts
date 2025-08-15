@@ -1,9 +1,10 @@
 import axios from "axios";
 import type { AxiosRequestConfig, AxiosResponse } from "axios";
-import { getToken } from "./UspacyTokenManager.js";
+import UspacyTokenManager from "./UspacyTokenManager.js";
 import { config } from "./config.js";
-import { createLogger } from './logger/index.js';
+import { createLogger } from "./logger/index.js";
 import { extractUSREOU } from "./utils.js";
+import type { KEPStorageType } from "./types.js";
 
 interface RequestOptions extends AxiosRequestConfig {
   method: string;
@@ -12,11 +13,11 @@ interface RequestOptions extends AxiosRequestConfig {
   data?: any;
 }
 
-const logger = createLogger('UspaceClient');
+const logger = createLogger("UspaceClient");
 
 class UspaceClient {
   async sendRequest(options: RequestOptions): Promise<AxiosResponse> {
-    const token = getToken();
+    const token = UspacyTokenManager.getToken();
 
     options.headers = {
       ...options.headers,
@@ -167,7 +168,7 @@ class UspaceClient {
     owner: string | number,
     data_formuvannya: number,
     data_zakinchennya: number,
-    na_cloudkey: boolean,
+    nosiy: KEPStorageType,
   ): Promise<any> {
     if (typeof companyId !== "string") {
       companyId = String(companyId);
@@ -187,7 +188,7 @@ class UspaceClient {
         owner, // is not necessery
         data_formuvannya,
         data_zakinchennya,
-        na_cloudkey,
+        nosiy,
         kompaniya: { id: companyId },
       },
     };
@@ -197,20 +198,20 @@ class UspaceClient {
   }
 
   async identifyCompany(companyName: string): Promise<string> {
-      const companyId = (await this.search(companyName)).companies[0]?.id;
-      if (!companyId) {
-          logger.error('Company ID was not found for company:', companyName);
-          throw new Error('Company ID was not found for company: ' + companyName);
-      }
-      logger.info(`Company ID found: ${companyId} for company ${companyName}`);
-      return companyId;
+    const companyId = (await this.search(companyName)).companies[0]?.id;
+    if (!companyId) {
+      logger.error("Company ID was not found for company:", companyName);
+      throw new Error("Company ID was not found for company: " + companyName);
+    }
+    logger.info(`Company ID found: ${companyId} for company ${companyName}`);
+    return companyId;
   }
 
   async getCompanyUSREOU(companyId: string | number): Promise<string> {
-    const USREOU = extractUSREOU((await this.getEntity('companies', companyId)).uf_crm_1632905074);
+    const USREOU = extractUSREOU((await this.getEntity("companies", companyId)).uf_crm_1632905074);
     if (!USREOU) {
-      logger.error('Company USREOU code was not found for company ID:', companyId);
-      throw new Error('Company USREOU code was not found for company ID: ' + companyId);
+      logger.error("Company USREOU code was not found for company ID:", companyId);
+      throw new Error("Company USREOU code was not found for company ID: " + companyId);
     }
 
     return USREOU;

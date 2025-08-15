@@ -1,12 +1,8 @@
 import "dotenv/config";
-import { createLogger } from "./logger/index.js";
-
-const logger = createLogger("Config");
 
 const required = (name: string, value: unknown): string => {
   if (value === undefined || value === null) {
     if (isTestEnvironment) {
-      logger.warn(`Using default test value for ${name}`);
       return getTestDefault(name);
     }
     throw new Error(`Missing required environment variable: ${name}`);
@@ -27,7 +23,7 @@ const getTestDefault = (name: string): string => {
 
   return defaults[name] || "mock-value";
 };
-    
+
 export const config = {
   NODE_ENV: required("NODE_ENV", process.env.NODE_ENV) || "production",
   PORT: required("PORT", process.env.PORT) || "3030",
