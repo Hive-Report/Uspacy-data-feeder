@@ -22,7 +22,7 @@ const logger = createLogger("Server");
     const initKEPFlow = new initializeCRMWithKEPDataFlow(uspacyClient, uakeyClient);
     await initKEPFlow.execute();
 
-    logger.info("✅ Application initialized successfully.");
+    logger.info("✅ KEP data initialized successfully.");
   } catch (err) {
     logger.error("❌Error in application:", err);
   }

@@ -188,7 +188,7 @@ class UspaceClient {
         owner,
         data_formuvannya,
         data_zakinchennya,
-        nosiy: { title: nosiy },
+        nosiy,
         kompaniya: { id: companyId },
       },
     };
