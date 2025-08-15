@@ -5,7 +5,6 @@ import { config } from "./config.js";
 import { createLogger } from "./logger/index.js";
 import initializeCRMWithKEPDataFlow from "./flows/initializeCRMWithKEPDataFlow.js";
 
-
 const logger = createLogger("Server");
 
 (async () => {

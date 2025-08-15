@@ -2028,3 +2028,10 @@
     at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
     at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
     at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:46:43 [info]: [Server] Starting application...
+2025-08-15 23:46:43 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:46:43 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:46:43 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:46:43 [info]: [initializeCRMWithKEPDataFlow] Processing companyId: 1
+2025-08-15 23:46:44 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ТОРГОВИЙ ДІМ МАРСЕ\"","owner":7,"data_formuvannya":1751835600,"data_zakinchennya":1814907599,"nosiy":"Файловий"},{"title":"ШЕЛЕСТ ІРИНА ВАЛЕНТИНІВНА","owner":7,"data_formuvannya":1751835600,"data_zakinchennya":1814907599,"nosiy":"Файловий"},{"title":"ЦАРАН ОЛЕГ АНАТОЛІЙОВИЧ","owner":7,"data_formuvannya":1751835600,"data_zakinchennya":1814907599,"nosiy":"Файловий"}]
+2025-08-15 23:46:44 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs

@@ -6,7 +6,7 @@ export class GoogleTokenManager {
   private static clientId = config.GOOGLE_CLIENT_ID;
   private static client: any = null;
   private static token: string | null = null;
-  private static tokenExp: number = 0;
+  private static tokenExp = 0;
 
   private static async getClient() {
     if (!GoogleTokenManager.client) {

@@ -15,7 +15,11 @@ class UakeyClient {
       const optionsFetch = {
         method: "GET",
         url: `${config.CERT_SERVICE}/api/certs/${String(USREOU)}`,
-        headers: { accept: "application/json", "content-type": "application/json", Authorization: `Bearer ${token}` },
+        headers: {
+          accept: "application/json",
+          "content-type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
       };
       const res = await axios.request(optionsFetch);
 
