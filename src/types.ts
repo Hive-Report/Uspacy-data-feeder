@@ -11,4 +11,4 @@ export interface Cert {
   status?: string;
 }
 
-export type KEPStorageType = "Файловий" | "Токен" | "CloudKey";
+export type KEPStorageType = "Невідомий" | "Файловий" | "Токен" | "CloudKey";

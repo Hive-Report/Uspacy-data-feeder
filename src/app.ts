@@ -16,10 +16,10 @@ const logger = createLogger("Server");
     logger.info("ℹ️ Token lifecycle started.");
 
     // Other processes
-    const parser = new UakeyClient();
-    const uspacy = new UspaceClient();
+    const uakeyClient = new UakeyClient();
+    const uspacyClient = new UspaceClient();
 
-    const initKEPFlow = new initializeCRMWithKEPDataFlow(uspacy, parser);
+    const initKEPFlow = new initializeCRMWithKEPDataFlow(uspacyClient, uakeyClient);
     await initKEPFlow.execute();
 
     logger.info("✅ Application initialized successfully.");

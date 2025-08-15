@@ -185,10 +185,10 @@ class UspaceClient {
       url: `https://${config.SPACE}.uspacy.ua/crm/v1/entities/keps`,
       data: {
         title,
-        owner, // is not necessery
+        owner,
         data_formuvannya,
         data_zakinchennya,
-        nosiy,
+        nosiy: { title: nosiy },
         kompaniya: { id: companyId },
       },
     };

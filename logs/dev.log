@@ -138,3 +138,1893 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
     at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:23:41)
     at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:13:11 [info]: [Server] Starting application...
+2025-08-15 23:13:12 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:13:12 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:13:12 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:13:12 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:13:12 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:13:42 [info]: [Server] Starting application...
+2025-08-15 23:13:42 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:13:42 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:13:42 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:13:42 [debug]: [Server] Test KEP: {}
+2025-08-15 23:13:42 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:13:42 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:14:00 [info]: [Server] Starting application...
+2025-08-15 23:14:01 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:14:01 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:14:01 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:14:01 [debug]: [Server] Test KEP: {}
+2025-08-15 23:14:01 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:14:01 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:14:45 [info]: [Server] Starting application...
+2025-08-15 23:14:45 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:14:45 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:14:45 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:14:45 [debug]: [Server] Test KEP: {}
+2025-08-15 23:14:45 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:14:46 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:14:49 [info]: [Server] Starting application...
+2025-08-15 23:14:49 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:14:49 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:14:49 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:14:49 [debug]: [Server] Test KEP: {}
+2025-08-15 23:14:49 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:14:49 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:14:53 [info]: [Server] Starting application...
+2025-08-15 23:14:53 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:14:53 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:14:53 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:14:53 [debug]: [Server] Test KEP: {}
+2025-08-15 23:14:53 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:14:53 [error]: [UspaceClient] AxiosError: Request failed with status code 404
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at Unzip.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at Unzip.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.getEntityFieldByItemCode (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:93:17)
+2025-08-15 23:15:07 [info]: [Server] Starting application...
+2025-08-15 23:15:08 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:15:08 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:15:08 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:15:08 [debug]: [Server] Test KEP: {}
+2025-08-15 23:15:08 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:15:14 [info]: [Server] Starting application...
+2025-08-15 23:15:14 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:15:14 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:15:14 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:15:14 [debug]: [Server] Test KEP: {}
+2025-08-15 23:15:14 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:15:33 [info]: [Server] Starting application...
+2025-08-15 23:15:34 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:15:34 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:15:34 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:15:34 [debug]: [Server] Test KEP: {}
+2025-08-15 23:15:34 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:16:00 [info]: [Server] Starting application...
+2025-08-15 23:16:00 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:16:00 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:16:00 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:16:01 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:16:01 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:16:01 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:16:41 [info]: [Server] Starting application...
+2025-08-15 23:16:41 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:16:41 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:16:41 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:16:41 [debug]: [Server] Test KEP: [{"name":"Title","code":"title","entity_reference_id":"","type":"string","required":true,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Owner","code":"owner","entity_reference_id":"","type":"user_id","required":false,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Created by","code":"created_by","entity_reference_id":"","type":"user_id","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Changed by","code":"changed_by","entity_reference_id":"","type":"user_id","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"created_at","code":"created_at","entity_reference_id":"","type":"datetime","required":false,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"updated_at","code":"updated_at","entity_reference_id":"","type":"datetime","required":false,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"kanban_status","code":"kanban_status","entity_reference_id":"","type":"string","required":false,"editable":false,"show":true,"hidden":true,"multiple":false,"system_field":true,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"kanban_reason_id","code":"kanban_reason_id","entity_reference_id":"","type":"integer","required":false,"editable":false,"show":true,"hidden":true,"multiple":false,"system_field":true,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"closed_by","code":"closed_by","entity_reference_id":"","type":"user_id","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"closed_at","code":"closed_at","entity_reference_id":"","type":"datetime","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"first_closed_by","code":"first_closed_by","entity_reference_id":"","type":"user_id","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"first_closed_at","code":"first_closed_at","entity_reference_id":"","type":"datetime","required":false,"editable":false,"show":true,"hidden":false,"multiple":false,"system_field":true,"base_field":true,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Дата формування","code":"data_formuvannya","entity_reference_id":"","type":"datetime","required":true,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":false,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Дата закінчення","code":"data_zakinchennya","entity_reference_id":"","type":"datetime","required":true,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":false,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":false},{"name":"Компанія","code":"kompaniya","entity_reference_id":4,"type":"entity_reference","required":true,"editable":true,"show":true,"hidden":false,"multiple":true,"system_field":false,"base_field":false,"sort":"","default_value":"","tooltip":"","display_in_tabs":true},{"name":"Носій","code":"nosiy","entity_reference_id":"","type":"list","required":false,"editable":true,"show":true,"hidden":false,"multiple":false,"system_field":false,"base_field":false,"sort":"","default_value":"","tooltip":"Невідомий/Файловий/Захищений/Clodkey","display_in_tabs":false,"values":[{"title":"Невідомий","value":"nevidomiy","color":"#16B1FF","sort":10,"selected":false},{"title":"Файловий","value":"fayloviy","color":"#FF4C51","sort":20,"selected":false},{"title":"Захищений","value":"zahishcheniy","color":"#32BAFF","sort":30,"selected":false},{"title":"Cloudkey","value":"cloudkey","color":"#16B1FF","sort":40,"selected":false}]}]
+2025-08-15 23:16:41 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:16:49 [info]: [Server] Starting application...
+2025-08-15 23:16:50 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:16:50 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:16:50 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:16:50 [debug]: [Server] Test KEP: [
+  {
+    "name": "Title",
+    "code": "title",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Owner",
+    "code": "owner",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Created by",
+    "code": "created_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Changed by",
+    "code": "changed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "created_at",
+    "code": "created_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "updated_at",
+    "code": "updated_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_status",
+    "code": "kanban_status",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_reason_id",
+    "code": "kanban_reason_id",
+    "entity_reference_id": "",
+    "type": "integer",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_by",
+    "code": "closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_at",
+    "code": "closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_by",
+    "code": "first_closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_at",
+    "code": "first_closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата формування",
+    "code": "data_formuvannya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата закінчення",
+    "code": "data_zakinchennya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Компанія",
+    "code": "kompaniya",
+    "entity_reference_id": 4,
+    "type": "entity_reference",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": true,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": true
+  },
+  {
+    "name": "Носій",
+    "code": "nosiy",
+    "entity_reference_id": "",
+    "type": "list",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "Невідомий/Файловий/Захищений/Clodkey",
+    "display_in_tabs": false,
+    "values": [
+      {
+        "title": "Невідомий",
+        "value": "nevidomiy",
+        "color": "#16B1FF",
+        "sort": 10,
+        "selected": false
+      },
+      {
+        "title": "Файловий",
+        "value": "fayloviy",
+        "color": "#FF4C51",
+        "sort": 20,
+        "selected": false
+      },
+      {
+        "title": "Захищений",
+        "value": "zahishcheniy",
+        "color": "#32BAFF",
+        "sort": 30,
+        "selected": false
+      },
+      {
+        "title": "Cloudkey",
+        "value": "cloudkey",
+        "color": "#16B1FF",
+        "sort": 40,
+        "selected": false
+      }
+    ]
+  }
+]
+2025-08-15 23:16:50 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:21:49 [info]: [Server] Starting application...
+2025-08-15 23:21:49 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:21:49 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:21:49 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:21:49 [debug]: [Server] Test KEP: [
+  {
+    "name": "Title",
+    "code": "title",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Owner",
+    "code": "owner",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Created by",
+    "code": "created_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Changed by",
+    "code": "changed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "created_at",
+    "code": "created_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "updated_at",
+    "code": "updated_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_status",
+    "code": "kanban_status",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_reason_id",
+    "code": "kanban_reason_id",
+    "entity_reference_id": "",
+    "type": "integer",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_by",
+    "code": "closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_at",
+    "code": "closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_by",
+    "code": "first_closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_at",
+    "code": "first_closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата формування",
+    "code": "data_formuvannya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата закінчення",
+    "code": "data_zakinchennya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Компанія",
+    "code": "kompaniya",
+    "entity_reference_id": 4,
+    "type": "entity_reference",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": true,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": true
+  },
+  {
+    "name": "Носій",
+    "code": "nosiy",
+    "entity_reference_id": "",
+    "type": "list",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "Невідомий/Файловий/Захищений/Clodkey",
+    "display_in_tabs": false,
+    "values": [
+      {
+        "title": "Невідомий",
+        "value": "nevidomiy",
+        "color": "#16B1FF",
+        "sort": 10,
+        "selected": false
+      },
+      {
+        "title": "Файловий",
+        "value": "fayloviy",
+        "color": "#FF4C51",
+        "sort": 20,
+        "selected": false
+      },
+      {
+        "title": "Токен",
+        "value": "zahishcheniy",
+        "color": "#32BAFF",
+        "sort": 30,
+        "selected": false
+      },
+      {
+        "title": "Cloudkey",
+        "value": "cloudkey",
+        "color": "#16B1FF",
+        "sort": 40,
+        "selected": false
+      }
+    ]
+  }
+]
+2025-08-15 23:21:49 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:21:55 [info]: [Server] Starting application...
+2025-08-15 23:21:55 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:21:55 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:21:55 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:21:55 [debug]: [Server] Test KEP: [
+  {
+    "name": "Title",
+    "code": "title",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Owner",
+    "code": "owner",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Created by",
+    "code": "created_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Changed by",
+    "code": "changed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "created_at",
+    "code": "created_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "updated_at",
+    "code": "updated_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_status",
+    "code": "kanban_status",
+    "entity_reference_id": "",
+    "type": "string",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "kanban_reason_id",
+    "code": "kanban_reason_id",
+    "entity_reference_id": "",
+    "type": "integer",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": true,
+    "multiple": false,
+    "system_field": true,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_by",
+    "code": "closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "closed_at",
+    "code": "closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_by",
+    "code": "first_closed_by",
+    "entity_reference_id": "",
+    "type": "user_id",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "first_closed_at",
+    "code": "first_closed_at",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": false,
+    "editable": false,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": true,
+    "base_field": true,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата формування",
+    "code": "data_formuvannya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Дата закінчення",
+    "code": "data_zakinchennya",
+    "entity_reference_id": "",
+    "type": "datetime",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": false
+  },
+  {
+    "name": "Компанія",
+    "code": "kompaniya",
+    "entity_reference_id": 4,
+    "type": "entity_reference",
+    "required": true,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": true,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "",
+    "display_in_tabs": true
+  },
+  {
+    "name": "Носій",
+    "code": "nosiy",
+    "entity_reference_id": "",
+    "type": "list",
+    "required": false,
+    "editable": true,
+    "show": true,
+    "hidden": false,
+    "multiple": false,
+    "system_field": false,
+    "base_field": false,
+    "sort": "",
+    "default_value": "",
+    "tooltip": "Невідомий/Файловий/Захищений/Clodkey",
+    "display_in_tabs": false,
+    "values": [
+      {
+        "title": "Невідомий",
+        "value": "nevidomiy",
+        "color": "#16B1FF",
+        "sort": 10,
+        "selected": false
+      },
+      {
+        "title": "Файловий",
+        "value": "fayloviy",
+        "color": "#FF4C51",
+        "sort": 20,
+        "selected": false
+      },
+      {
+        "title": "Токен",
+        "value": "zahishcheniy",
+        "color": "#32BAFF",
+        "sort": 30,
+        "selected": false
+      },
+      {
+        "title": "Cloudkey",
+        "value": "cloudkey",
+        "color": "#16B1FF",
+        "sort": 40,
+        "selected": false
+      }
+    ]
+  }
+]
+2025-08-15 23:21:55 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:22:08 [info]: [Server] Starting application...
+2025-08-15 23:22:08 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:22:08 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:22:08 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:22:08 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:22:17 [info]: [Server] Starting application...
+2025-08-15 23:22:18 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:22:18 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:22:18 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:22:18 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:22:21 [info]: [Server] Starting application...
+2025-08-15 23:22:22 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:22:22 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:22:22 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:22:22 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:22:41 [info]: [Server] Starting application...
+2025-08-15 23:22:42 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:22:42 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:22:42 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:22:42 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:24:18 [info]: [Server] Starting application...
+2025-08-15 23:24:18 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:24:18 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:24:18 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:24:18 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:24:19 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:24:19 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:24:21 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:24:21 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:24:21 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:11 [info]: [Server] Starting application...
+2025-08-15 23:27:12 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:27:12 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:27:12 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:27:12 [debug]: [UspaceClient] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2loaXZlLnVzcGFjeS51YS9hdXRoL3YxL2F1dGgvc2lnbl9pbiIsImlhdCI6MTc1NTI4OTYzMywiZXhwIjoxNzU2NDk5MjMzLCJuYmYiOjE3NTUyODk2MzMsImp0aSI6InQ2MG9oYVg0bzJ5RzQyUzAiLCJpZCI6NywiZW1haWwiOiJvLmJhemh5bkBoaXZlLnJlcG9ydCIsInN1YiI6IjciLCJhdXRoVXNlcklkIjoxNTMxOCwiZmlyc3ROYW1lIjoi0J7Qu9C10LrRgdCw0L3QtNGAIiwibGFzdE5hbWUiOiLQkdCw0LbQuNC9Iiwid29ya3NwYWNlSWQiOiJpaGl2ZSIsImRvbWFpbiI6ImloaXZlLnVzcGFjeS51YSIsInJvbGVzIjpbIkFETUlOIiwiRW1wbG95ZWUiXSwiZGVwYXJ0bWVudHMiOlsxLDExXSwicGVybWlzc2lvbnMiOnsiY3JlYXRlIjpbImNybS5sZWFkcy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb250YWN0cy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb21wYW5pZXMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uZGVhbHMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uaW52b2ljZS5jcmVhdGUuYWxsb3dlZCIsImNybS5wcm9kdWN0LmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmFjdGl2aXR5LmNyZWF0ZS5hbGxvd2VkIiwiaHJtLmhpcmluZy5jcmVhdGUuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUuY3JlYXRlLmFsbG93ZWQiLCJocm0uZGVwYXJ0bWVudC5jcmVhdGUuYWxsb3dlZCIsImhybS5lbXBsb3llZS5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRhc2suY3JlYXRlLmFsbG93ZWQiLCJ0YXNrcy5ib2FyZC5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmtlcHMuY3JlYXRlLmFsbG93ZWQiXSwidmlldyI6WyJjcm0ubGVhZHMudmlldy5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLnZpZXcuYWxsb3dlZCIsImNybS5jb21wYW5pZXMudmlldy5hbGxvd2VkIiwiY3JtLmRlYWxzLnZpZXcuYWxsb3dlZCIsImNybS5pbnZvaWNlLnZpZXcuYWxsb3dlZCIsImNybS5wcm9kdWN0LnZpZXcuYWxsb3dlZCIsImNybS5hY3Rpdml0eS52aWV3LmFsbG93ZWQiLCJocm0uaGlyaW5nLnZpZXcuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUudmlldy5hbGxvd2VkIiwiaHJtLmRlcGFydG1lbnQudmlldy5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLnZpZXcuYWxsb3dlZCIsInRhc2tzLnRhc2sudmlldy5hbGxvd2VkIiwidGFza3MuYm9hcmQudmlldy5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUudmlldy5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLnZpZXcuYWxsb3dlZCIsImNybS51c3BhY3lfY2FsbHMudmlldy5hbGxvd2VkIiwiY3JtLmtlcHMudmlldy5hbGxvd2VkIl0sImVkaXQiOlsiY3JtLmxlYWRzLmVkaXQuYWxsb3dlZCIsImNybS5jb250YWN0cy5lZGl0LmFsbG93ZWQiLCJjcm0uY29tcGFuaWVzLmVkaXQuYWxsb3dlZCIsImNybS5kZWFscy5lZGl0LmFsbG93ZWQiLCJjcm0uaW52b2ljZS5lZGl0LmFsbG93ZWQiLCJjcm0ucHJvZHVjdC5lZGl0LmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZWRpdC5hbGxvd2VkIiwiaHJtLmhpcmluZy5lZGl0LmFsbG93ZWQiLCJocm0uY2FuZGlkYXRlLmVkaXQuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmVkaXQuYWxsb3dlZCIsImhybS5lbXBsb3llZS5lZGl0LmFsbG93ZWQiLCJ0YXNrcy50YXNrLmVkaXQuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmVkaXQuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmVkaXQuYWxsb3dlZCIsIm5ld3NfZmVlZC5uZXdzLmVkaXQuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5lZGl0LmFsbG93ZWQiLCJjcm0udXNwYWN5X2NhbGxzLmVkaXQuYWxsb3dlZCIsImNybS5rZXBzLmVkaXQuYWxsb3dlZCJdLCJkZWxldGUiOlsiY3JtLmxlYWRzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbXBhbmllcy5kZWxldGUuYWxsb3dlZCIsImNybS5kZWFscy5kZWxldGUuYWxsb3dlZCIsImNybS5pbnZvaWNlLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLnByb2R1Y3QuZGVsZXRlLmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZGVsZXRlLmFsbG93ZWQiLCJocm0uaGlyaW5nLmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmNhbmRpZGF0ZS5kZWxldGUuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGFzay5kZWxldGUuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUuZGVsZXRlLmFsbG93ZWQiLCJuZXdzX2ZlZWQubmV3cy5kZWxldGUuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5kZWxldGUuYWxsb3dlZCIsImNybS5rZXBzLmRlbGV0ZS5taW5lIl19LCJ0YXJpZmZJZCI6MywiYXV0b3Bhc3N3b3JkIjowfQ.b874l1N87rsWAAFXAjmHwwZ0yGqvBOdyLn_q4tfcGCE
+2025-08-15 23:27:12 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:27:12 [debug]: [UspaceClient] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2loaXZlLnVzcGFjeS51YS9hdXRoL3YxL2F1dGgvc2lnbl9pbiIsImlhdCI6MTc1NTI4OTYzMywiZXhwIjoxNzU2NDk5MjMzLCJuYmYiOjE3NTUyODk2MzMsImp0aSI6InQ2MG9oYVg0bzJ5RzQyUzAiLCJpZCI6NywiZW1haWwiOiJvLmJhemh5bkBoaXZlLnJlcG9ydCIsInN1YiI6IjciLCJhdXRoVXNlcklkIjoxNTMxOCwiZmlyc3ROYW1lIjoi0J7Qu9C10LrRgdCw0L3QtNGAIiwibGFzdE5hbWUiOiLQkdCw0LbQuNC9Iiwid29ya3NwYWNlSWQiOiJpaGl2ZSIsImRvbWFpbiI6ImloaXZlLnVzcGFjeS51YSIsInJvbGVzIjpbIkFETUlOIiwiRW1wbG95ZWUiXSwiZGVwYXJ0bWVudHMiOlsxLDExXSwicGVybWlzc2lvbnMiOnsiY3JlYXRlIjpbImNybS5sZWFkcy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb250YWN0cy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb21wYW5pZXMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uZGVhbHMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uaW52b2ljZS5jcmVhdGUuYWxsb3dlZCIsImNybS5wcm9kdWN0LmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmFjdGl2aXR5LmNyZWF0ZS5hbGxvd2VkIiwiaHJtLmhpcmluZy5jcmVhdGUuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUuY3JlYXRlLmFsbG93ZWQiLCJocm0uZGVwYXJ0bWVudC5jcmVhdGUuYWxsb3dlZCIsImhybS5lbXBsb3llZS5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRhc2suY3JlYXRlLmFsbG93ZWQiLCJ0YXNrcy5ib2FyZC5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmtlcHMuY3JlYXRlLmFsbG93ZWQiXSwidmlldyI6WyJjcm0ubGVhZHMudmlldy5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLnZpZXcuYWxsb3dlZCIsImNybS5jb21wYW5pZXMudmlldy5hbGxvd2VkIiwiY3JtLmRlYWxzLnZpZXcuYWxsb3dlZCIsImNybS5pbnZvaWNlLnZpZXcuYWxsb3dlZCIsImNybS5wcm9kdWN0LnZpZXcuYWxsb3dlZCIsImNybS5hY3Rpdml0eS52aWV3LmFsbG93ZWQiLCJocm0uaGlyaW5nLnZpZXcuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUudmlldy5hbGxvd2VkIiwiaHJtLmRlcGFydG1lbnQudmlldy5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLnZpZXcuYWxsb3dlZCIsInRhc2tzLnRhc2sudmlldy5hbGxvd2VkIiwidGFza3MuYm9hcmQudmlldy5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUudmlldy5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLnZpZXcuYWxsb3dlZCIsImNybS51c3BhY3lfY2FsbHMudmlldy5hbGxvd2VkIiwiY3JtLmtlcHMudmlldy5hbGxvd2VkIl0sImVkaXQiOlsiY3JtLmxlYWRzLmVkaXQuYWxsb3dlZCIsImNybS5jb250YWN0cy5lZGl0LmFsbG93ZWQiLCJjcm0uY29tcGFuaWVzLmVkaXQuYWxsb3dlZCIsImNybS5kZWFscy5lZGl0LmFsbG93ZWQiLCJjcm0uaW52b2ljZS5lZGl0LmFsbG93ZWQiLCJjcm0ucHJvZHVjdC5lZGl0LmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZWRpdC5hbGxvd2VkIiwiaHJtLmhpcmluZy5lZGl0LmFsbG93ZWQiLCJocm0uY2FuZGlkYXRlLmVkaXQuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmVkaXQuYWxsb3dlZCIsImhybS5lbXBsb3llZS5lZGl0LmFsbG93ZWQiLCJ0YXNrcy50YXNrLmVkaXQuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmVkaXQuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmVkaXQuYWxsb3dlZCIsIm5ld3NfZmVlZC5uZXdzLmVkaXQuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5lZGl0LmFsbG93ZWQiLCJjcm0udXNwYWN5X2NhbGxzLmVkaXQuYWxsb3dlZCIsImNybS5rZXBzLmVkaXQuYWxsb3dlZCJdLCJkZWxldGUiOlsiY3JtLmxlYWRzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbXBhbmllcy5kZWxldGUuYWxsb3dlZCIsImNybS5kZWFscy5kZWxldGUuYWxsb3dlZCIsImNybS5pbnZvaWNlLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLnByb2R1Y3QuZGVsZXRlLmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZGVsZXRlLmFsbG93ZWQiLCJocm0uaGlyaW5nLmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmNhbmRpZGF0ZS5kZWxldGUuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGFzay5kZWxldGUuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUuZGVsZXRlLmFsbG93ZWQiLCJuZXdzX2ZlZWQubmV3cy5kZWxldGUuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5kZWxldGUuYWxsb3dlZCIsImNybS5rZXBzLmRlbGV0ZS5taW5lIl19LCJ0YXJpZmZJZCI6MywiYXV0b3Bhc3N3b3JkIjowfQ.b874l1N87rsWAAFXAjmHwwZ0yGqvBOdyLn_q4tfcGCE
+2025-08-15 23:27:12 [debug]: [UspaceClient] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2loaXZlLnVzcGFjeS51YS9hdXRoL3YxL2F1dGgvc2lnbl9pbiIsImlhdCI6MTc1NTI4OTYzMywiZXhwIjoxNzU2NDk5MjMzLCJuYmYiOjE3NTUyODk2MzMsImp0aSI6InQ2MG9oYVg0bzJ5RzQyUzAiLCJpZCI6NywiZW1haWwiOiJvLmJhemh5bkBoaXZlLnJlcG9ydCIsInN1YiI6IjciLCJhdXRoVXNlcklkIjoxNTMxOCwiZmlyc3ROYW1lIjoi0J7Qu9C10LrRgdCw0L3QtNGAIiwibGFzdE5hbWUiOiLQkdCw0LbQuNC9Iiwid29ya3NwYWNlSWQiOiJpaGl2ZSIsImRvbWFpbiI6ImloaXZlLnVzcGFjeS51YSIsInJvbGVzIjpbIkFETUlOIiwiRW1wbG95ZWUiXSwiZGVwYXJ0bWVudHMiOlsxLDExXSwicGVybWlzc2lvbnMiOnsiY3JlYXRlIjpbImNybS5sZWFkcy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb250YWN0cy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb21wYW5pZXMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uZGVhbHMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uaW52b2ljZS5jcmVhdGUuYWxsb3dlZCIsImNybS5wcm9kdWN0LmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmFjdGl2aXR5LmNyZWF0ZS5hbGxvd2VkIiwiaHJtLmhpcmluZy5jcmVhdGUuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUuY3JlYXRlLmFsbG93ZWQiLCJocm0uZGVwYXJ0bWVudC5jcmVhdGUuYWxsb3dlZCIsImhybS5lbXBsb3llZS5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRhc2suY3JlYXRlLmFsbG93ZWQiLCJ0YXNrcy5ib2FyZC5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmtlcHMuY3JlYXRlLmFsbG93ZWQiXSwidmlldyI6WyJjcm0ubGVhZHMudmlldy5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLnZpZXcuYWxsb3dlZCIsImNybS5jb21wYW5pZXMudmlldy5hbGxvd2VkIiwiY3JtLmRlYWxzLnZpZXcuYWxsb3dlZCIsImNybS5pbnZvaWNlLnZpZXcuYWxsb3dlZCIsImNybS5wcm9kdWN0LnZpZXcuYWxsb3dlZCIsImNybS5hY3Rpdml0eS52aWV3LmFsbG93ZWQiLCJocm0uaGlyaW5nLnZpZXcuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUudmlldy5hbGxvd2VkIiwiaHJtLmRlcGFydG1lbnQudmlldy5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLnZpZXcuYWxsb3dlZCIsInRhc2tzLnRhc2sudmlldy5hbGxvd2VkIiwidGFza3MuYm9hcmQudmlldy5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUudmlldy5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLnZpZXcuYWxsb3dlZCIsImNybS51c3BhY3lfY2FsbHMudmlldy5hbGxvd2VkIiwiY3JtLmtlcHMudmlldy5hbGxvd2VkIl0sImVkaXQiOlsiY3JtLmxlYWRzLmVkaXQuYWxsb3dlZCIsImNybS5jb250YWN0cy5lZGl0LmFsbG93ZWQiLCJjcm0uY29tcGFuaWVzLmVkaXQuYWxsb3dlZCIsImNybS5kZWFscy5lZGl0LmFsbG93ZWQiLCJjcm0uaW52b2ljZS5lZGl0LmFsbG93ZWQiLCJjcm0ucHJvZHVjdC5lZGl0LmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZWRpdC5hbGxvd2VkIiwiaHJtLmhpcmluZy5lZGl0LmFsbG93ZWQiLCJocm0uY2FuZGlkYXRlLmVkaXQuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmVkaXQuYWxsb3dlZCIsImhybS5lbXBsb3llZS5lZGl0LmFsbG93ZWQiLCJ0YXNrcy50YXNrLmVkaXQuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmVkaXQuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmVkaXQuYWxsb3dlZCIsIm5ld3NfZmVlZC5uZXdzLmVkaXQuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5lZGl0LmFsbG93ZWQiLCJjcm0udXNwYWN5X2NhbGxzLmVkaXQuYWxsb3dlZCIsImNybS5rZXBzLmVkaXQuYWxsb3dlZCJdLCJkZWxldGUiOlsiY3JtLmxlYWRzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbXBhbmllcy5kZWxldGUuYWxsb3dlZCIsImNybS5kZWFscy5kZWxldGUuYWxsb3dlZCIsImNybS5pbnZvaWNlLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLnByb2R1Y3QuZGVsZXRlLmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZGVsZXRlLmFsbG93ZWQiLCJocm0uaGlyaW5nLmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmNhbmRpZGF0ZS5kZWxldGUuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGFzay5kZWxldGUuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUuZGVsZXRlLmFsbG93ZWQiLCJuZXdzX2ZlZWQubmV3cy5kZWxldGUuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5kZWxldGUuYWxsb3dlZCIsImNybS5rZXBzLmRlbGV0ZS5taW5lIl19LCJ0YXJpZmZJZCI6MywiYXV0b3Bhc3N3b3JkIjowfQ.b874l1N87rsWAAFXAjmHwwZ0yGqvBOdyLn_q4tfcGCE
+2025-08-15 23:27:12 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:27:12 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:27:12 [debug]: [UspaceClient] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2loaXZlLnVzcGFjeS51YS9hdXRoL3YxL2F1dGgvc2lnbl9pbiIsImlhdCI6MTc1NTI4OTYzMywiZXhwIjoxNzU2NDk5MjMzLCJuYmYiOjE3NTUyODk2MzMsImp0aSI6InQ2MG9oYVg0bzJ5RzQyUzAiLCJpZCI6NywiZW1haWwiOiJvLmJhemh5bkBoaXZlLnJlcG9ydCIsInN1YiI6IjciLCJhdXRoVXNlcklkIjoxNTMxOCwiZmlyc3ROYW1lIjoi0J7Qu9C10LrRgdCw0L3QtNGAIiwibGFzdE5hbWUiOiLQkdCw0LbQuNC9Iiwid29ya3NwYWNlSWQiOiJpaGl2ZSIsImRvbWFpbiI6ImloaXZlLnVzcGFjeS51YSIsInJvbGVzIjpbIkFETUlOIiwiRW1wbG95ZWUiXSwiZGVwYXJ0bWVudHMiOlsxLDExXSwicGVybWlzc2lvbnMiOnsiY3JlYXRlIjpbImNybS5sZWFkcy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb250YWN0cy5jcmVhdGUuYWxsb3dlZCIsImNybS5jb21wYW5pZXMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uZGVhbHMuY3JlYXRlLmFsbG93ZWQiLCJjcm0uaW52b2ljZS5jcmVhdGUuYWxsb3dlZCIsImNybS5wcm9kdWN0LmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmFjdGl2aXR5LmNyZWF0ZS5hbGxvd2VkIiwiaHJtLmhpcmluZy5jcmVhdGUuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUuY3JlYXRlLmFsbG93ZWQiLCJocm0uZGVwYXJ0bWVudC5jcmVhdGUuYWxsb3dlZCIsImhybS5lbXBsb3llZS5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRhc2suY3JlYXRlLmFsbG93ZWQiLCJ0YXNrcy5ib2FyZC5jcmVhdGUuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLmNyZWF0ZS5hbGxvd2VkIiwiY3JtLmtlcHMuY3JlYXRlLmFsbG93ZWQiXSwidmlldyI6WyJjcm0ubGVhZHMudmlldy5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLnZpZXcuYWxsb3dlZCIsImNybS5jb21wYW5pZXMudmlldy5hbGxvd2VkIiwiY3JtLmRlYWxzLnZpZXcuYWxsb3dlZCIsImNybS5pbnZvaWNlLnZpZXcuYWxsb3dlZCIsImNybS5wcm9kdWN0LnZpZXcuYWxsb3dlZCIsImNybS5hY3Rpdml0eS52aWV3LmFsbG93ZWQiLCJocm0uaGlyaW5nLnZpZXcuYWxsb3dlZCIsImhybS5jYW5kaWRhdGUudmlldy5hbGxvd2VkIiwiaHJtLmRlcGFydG1lbnQudmlldy5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLnZpZXcuYWxsb3dlZCIsInRhc2tzLnRhc2sudmlldy5hbGxvd2VkIiwidGFza3MuYm9hcmQudmlldy5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUudmlldy5hbGxvd2VkIiwiY3JtLnJhaHVua2lzLnZpZXcuYWxsb3dlZCIsImNybS51c3BhY3lfY2FsbHMudmlldy5hbGxvd2VkIiwiY3JtLmtlcHMudmlldy5hbGxvd2VkIl0sImVkaXQiOlsiY3JtLmxlYWRzLmVkaXQuYWxsb3dlZCIsImNybS5jb250YWN0cy5lZGl0LmFsbG93ZWQiLCJjcm0uY29tcGFuaWVzLmVkaXQuYWxsb3dlZCIsImNybS5kZWFscy5lZGl0LmFsbG93ZWQiLCJjcm0uaW52b2ljZS5lZGl0LmFsbG93ZWQiLCJjcm0ucHJvZHVjdC5lZGl0LmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZWRpdC5hbGxvd2VkIiwiaHJtLmhpcmluZy5lZGl0LmFsbG93ZWQiLCJocm0uY2FuZGlkYXRlLmVkaXQuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmVkaXQuYWxsb3dlZCIsImhybS5lbXBsb3llZS5lZGl0LmFsbG93ZWQiLCJ0YXNrcy50YXNrLmVkaXQuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmVkaXQuYWxsb3dlZCIsInRhc2tzLnRlbXBsYXRlLmVkaXQuYWxsb3dlZCIsIm5ld3NfZmVlZC5uZXdzLmVkaXQuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5lZGl0LmFsbG93ZWQiLCJjcm0udXNwYWN5X2NhbGxzLmVkaXQuYWxsb3dlZCIsImNybS5rZXBzLmVkaXQuYWxsb3dlZCJdLCJkZWxldGUiOlsiY3JtLmxlYWRzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbnRhY3RzLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLmNvbXBhbmllcy5kZWxldGUuYWxsb3dlZCIsImNybS5kZWFscy5kZWxldGUuYWxsb3dlZCIsImNybS5pbnZvaWNlLmRlbGV0ZS5hbGxvd2VkIiwiY3JtLnByb2R1Y3QuZGVsZXRlLmFsbG93ZWQiLCJjcm0uYWN0aXZpdHkuZGVsZXRlLmFsbG93ZWQiLCJocm0uaGlyaW5nLmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmNhbmRpZGF0ZS5kZWxldGUuYWxsb3dlZCIsImhybS5kZXBhcnRtZW50LmRlbGV0ZS5hbGxvd2VkIiwiaHJtLmVtcGxveWVlLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGFzay5kZWxldGUuYWxsb3dlZCIsInRhc2tzLmJvYXJkLmRlbGV0ZS5hbGxvd2VkIiwidGFza3MudGVtcGxhdGUuZGVsZXRlLmFsbG93ZWQiLCJuZXdzX2ZlZWQubmV3cy5kZWxldGUuYWxsb3dlZCIsImNybS5yYWh1bmtpcy5kZWxldGUuYWxsb3dlZCIsImNybS5rZXBzLmRlbGV0ZS5taW5lIl19LCJ0YXJpZmZJZCI6MywiYXV0b3Bhc3N3b3JkIjowfQ.b874l1N87rsWAAFXAjmHwwZ0yGqvBOdyLn_q4tfcGCE
+2025-08-15 23:27:12 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:35:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:197:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:12 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:35:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:197:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:12 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:35:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:197:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:29 [info]: [Server] Starting application...
+2025-08-15 23:27:29 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:27:29 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:27:29 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:27:30 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:27:30 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:27:30 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:27:30 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:30 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:27:30 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:32:59 [info]: [Server] Starting application...
+2025-08-15 23:32:59 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:32:59 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:32:59 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:33:00 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:33:00 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:33:00 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:33:00 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:00 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:00 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:26 [info]: [Server] Starting application...
+2025-08-15 23:33:26 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:33:26 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:33:26 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:33:26 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:33:27 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:33:27 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:33:27 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:27 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:27 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:45 [info]: [Server] Starting application...
+2025-08-15 23:33:46 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:33:46 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:33:46 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:33:46 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:33:46 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:33:46 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:33:46 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:46 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:46 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:34:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:196:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:58 [info]: [Server] Starting application...
+2025-08-15 23:33:59 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:33:59 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:33:59 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:33:59 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:33:59 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":1},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":1},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":1}]
+2025-08-15 23:33:59 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:33:59 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:59 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:33:59 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:34:12 [info]: [Server] Starting application...
+2025-08-15 23:34:12 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:34:12 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:34:12 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:34:12 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:34:13 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:34:13 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:34:15 [info]: [Server] Starting application...
+2025-08-15 23:34:16 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:34:16 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:34:16 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:34:16 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007dc477c","name":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","start_date":"2023-09-26 15:00:41","end_date":"2025-09-25 23:59:59","type":"Бухгалтер","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007dc477e","name":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","start_date":"2023-09-26 15:00:47","end_date":"2025-09-25 23:59:59","type":"Співробітник","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007dc4801","name":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","start_date":"2023-09-26 15:00:58","end_date":"2025-09-25 23:59:59","type":"Директор","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007dc4805","name":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","start_date":"2023-09-26 15:01:04","end_date":"2025-09-25 23:59:59","type":"Печатка","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007f3f715","name":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","start_date":"2024-04-03 14:29:12","end_date":"2025-09-25 23:59:59","type":"Співробітник","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007f3f719","name":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","start_date":"2024-04-03 14:29:17","end_date":"2025-09-25 23:59:59","type":"Печатка","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007f3f717","name":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","start_date":"2024-04-03 14:29:17","end_date":"2025-09-25 23:59:59","type":"Директор","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [KEPCertMapper] Mapping Cert to CRM DTO: {"serial":"0100000000000000000000000000000007f3f723","name":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","start_date":"2024-04-03 14:29:39","end_date":"2025-09-25 23:59:59","type":"Бухгалтер","storage_type":"Файловий","crypt":"Підписання","status":"Діючий"}
+2025-08-15 23:34:16 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:34:16 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:34:21 [info]: [Server] Starting application...
+2025-08-15 23:34:21 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:34:21 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:34:21 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:34:21 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:34:22 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:34:22 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:34:29 [info]: [initializeCRMWithKEPDataFlow] CRM KEPs updated for company:
+2025-08-15 23:34:30 [debug]: [initializeCRMWithKEPDataFlow] Result: [{"id":4812,"created_at":1755290070,"updated_at":1755290070,"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1712143779,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4811,"created_at":1755290069,"updated_at":1755290069,"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1712143757,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4810,"created_at":1755290068,"updated_at":1755290068,"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1712143757,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4809,"created_at":1755290067,"updated_at":1755290067,"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1712143752,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4808,"created_at":1755290066,"updated_at":1755290066,"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1695729664,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4807,"created_at":1755290066,"updated_at":1755290066,"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1695729658,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4806,"created_at":1755290065,"updated_at":1755290065,"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1695729647,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"},{"id":4805,"created_at":1755290064,"updated_at":1755290064,"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"created_by":7,"changed_by":"","kanban_status":"IN_WORK","kanban_reason_id":"","closed_by":"","closed_at":"","first_closed_by":"","first_closed_at":"","data_formuvannya":1695729641,"data_zakinchennya":1758833999,"kompaniya":[{"id":9987,"title":"Тест Тестович","owner":4,"phone":[{"id":"953b173f-9b1f-410e-877f-c2460ff65c22","type":"WORK","value":"380679873125","main":true,"sort":""},{"id":"38abd7e4-bbd8-40f9-9c9a-54d81bbef16b","type":"WORK","value":"380501898434","main":false,"sort":""}],"email":[{"id":"ab50c5b6-cb0f-4b16-aa34-a28306ea2863","type":"WORK","value":"dgyleta@ukr.net","main":true,"sort":""},{"id":"52ab6f29-42bb-4990-aa24-28ee6d052fcf","type":"WORK","value":"o.bazhyn@hive.report","main":false,"sort":""}]}],"nosiy":"","kanban_stage_id":68,"new_kanban_stage_id":null,"old_kanban_stage_id":null,"table_name":"keps"}]
+2025-08-15 23:34:30 [info]: [Server] ✅ Application initialized successfully.
+2025-08-15 23:35:40 [info]: [Server] Starting application...
+2025-08-15 23:35:41 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:35:41 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:35:41 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:35:41 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:35:42 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:35:42 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:35:45 [info]: [Server] Starting application...
+2025-08-15 23:35:45 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:35:45 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:35:45 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:35:45 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:35:46 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:35:46 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:35:48 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:35:48 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:35:48 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:11 [info]: [Server] Starting application...
+2025-08-15 23:36:11 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:36:11 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:36:11 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:36:12 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:36:12 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:36:12 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:36:12 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:12 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:12 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:16 [info]: [Server] Starting application...
+2025-08-15 23:36:16 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:36:16 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:36:16 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:36:16 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:36:17 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:36:17 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:36:17 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:17 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:36:17 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:37:51 [info]: [Server] Starting application...
+2025-08-15 23:37:52 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:37:52 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:37:52 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:37:52 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:37:52 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:37:52 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:37:52 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:37:52 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:37:52 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:37:58 [info]: [Server] Starting application...
+2025-08-15 23:37:59 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:37:59 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:37:59 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:37:59 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:37:59 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:37:59 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:38:00 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:00 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:00 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:18 [info]: [Server] Starting application...
+2025-08-15 23:38:18 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:38:18 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:38:18 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:38:18 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:38:19 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":{"id":1}},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":{"id":1}}]
+2025-08-15 23:38:19 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:38:19 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:19 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:19 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:23 [info]: [Server] Starting application...
+2025-08-15 23:38:23 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:38:23 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:38:23 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:38:24 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:38:24 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:38:24 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:38:24 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:24 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:38:24 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:07 [info]: [Server] Starting application...
+2025-08-15 23:40:07 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:40:07 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:40:07 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:40:07 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:40:08 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:40:08 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:40:08 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:08 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:08 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:25 [info]: [Server] Starting application...
+2025-08-15 23:40:25 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:40:25 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:40:25 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:40:25 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:40:26 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:40:26 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:40:26 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:26 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:26 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:38 [info]: [Server] Starting application...
+2025-08-15 23:40:39 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:40:39 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:40:39 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:40:39 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:40:39 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:40:39 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:40:40 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:40 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:40 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:47 [info]: [Server] Starting application...
+2025-08-15 23:40:48 [info]: [UspacyTokenManager] ℹ️ New token fetched.
+2025-08-15 23:40:48 [debug]: [UspacyTokenManager] ⏳Token will expire in 86400 seconds.
+2025-08-15 23:40:48 [info]: [Server] ℹ️ Token lifecycle started.
+2025-08-15 23:40:48 [info]: [UspaceClient] Company ID found: 9987 for company Тест Тестович
+2025-08-15 23:40:48 [debug]: [initializeCRMWithKEPDataFlow] Uakey KEPs: [{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1695729641,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729647,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1695729658,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1695729664,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ФЕДОРЕНКО ІВАН ВІКТОРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143752,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"ТОВ \"УНІВЕРСИТЕТ\" (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"КРАВЧУК ВОЛОДИМИР ПЕТРОВИЧ (ТЕСТ)","owner":7,"data_formuvannya":1712143757,"data_zakinchennya":1758833999,"nosiy":"Файловий"},{"title":"СОЛОМОНОВА ТЕТЯНА ВІКТОРІВНА (ТЕСТ)","owner":7,"data_formuvannya":1712143779,"data_zakinchennya":1758833999,"nosiy":"Файловий"}]
+2025-08-15 23:40:48 [debug]: [initializeCRMWithKEPDataFlow] Comparing Uakey KEPs with CRM KEPs
+2025-08-15 23:40:48 [error]: [UspaceClient] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:48 [error]: [initializeCRMWithKEPDataFlow] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
+2025-08-15 23:40:48 [error]: [Server] AxiosError: Request failed with status code 422
+    at settle (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/adapters/http.js:599:11)
+    at IncomingMessage.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///C:/My%20Source%20Code/%D0%9E%D1%81%D0%BE%D0%B1%D0%B8%D1%81%D1%82%D1%96%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82%D0%B8/Danylo/node_modules/axios/lib/core/Axios.js:45:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UspaceClient.sendRequest (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:33:14)
+    at async UspaceClient.createKEPEntityForCompany (C:\My Source Code\Особисті проєкти\Danylo\src\UspaceClient.ts:195:17)
+    at async initializeCRMWithKEPDataFlow.execute (C:\My Source Code\Особисті проєкти\Danylo\src\flows\initializeCRMWithKEPDataFlow.ts:63:11)
+    at async <anonymous> (C:\My Source Code\Особисті проєкти\Danylo\src\app.ts:23:5)
