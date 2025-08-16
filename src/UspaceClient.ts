@@ -16,25 +16,31 @@ interface RequestOptions extends AxiosRequestConfig {
 const logger = createLogger("UspaceClient");
 
 class UspaceClient {
-  async sendRequest(options: RequestOptions): Promise<AxiosResponse> {
-    const token = await UspacyTokenManager.getToken();
-
-    options.headers = {
-      ...options.headers,
-      accept: "application/json",
-      authorization: `Bearer ${token}`,
-    };
-
-    if (["POST", "PUT", "PATCH"].includes(options.method?.toUpperCase())) {
-      options.headers["Content-Type"] = "application/json";
+  async sendRequest(options: RequestOptions, maxAttempts = 3, retryDelay = 500): Promise<AxiosResponse> {
+    let attempts = 0;
+    while (attempts < maxAttempts) {
+      try {
+        const token = await UspacyTokenManager.getToken();
+        options.headers = {
+          ...options.headers,
+          accept: "application/json",
+          authorization: `Bearer ${token}`,
+        };
+        if (["POST", "PUT", "PATCH"].includes(options.method?.toUpperCase())) {
+          options.headers["Content-Type"] = "application/json";
+        }
+        return await axios.request(options);
+      } catch (err) {
+        attempts++;
+        logger.warn(`Attempt ${attempts} failed:`, err);
+        if (attempts >= maxAttempts) {
+          logger.error(`Failed after ${maxAttempts} attempts.`);
+          throw err;
+        }
+        await new Promise(res => setTimeout(res, retryDelay));
+      }
     }
-
-    try {
-      return await axios.request(options);
-    } catch (err) {
-      logger.error(err);
-      throw err;
-    }
+    throw new Error("Unreachable code");
   }
 
   async search(param: string | number): Promise<any> {

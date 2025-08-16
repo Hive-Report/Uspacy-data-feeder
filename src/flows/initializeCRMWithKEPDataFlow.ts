@@ -79,28 +79,18 @@ class initializeCRMWithKEPDataFlow implements Flow {
             await this.UspaceClient.deleteKEP(kep.id);
           }
           for (const dto of uakeyDtos) {
-            let attempts = 0;
-            const MAX_ATTEMPTS = 3;
-            let success = false;
-            while (attempts < MAX_ATTEMPTS && !success) {
-              try {
-                await this.UspaceClient.createKEPEntityForCompany(
-                  companyId,
-                  dto.title,
-                  dto.owner,
-                  dto.data_formuvannya,
-                  dto.data_zakinchennya,
-                  dto.tip,
-                  dto.nosiy,
-                );
-                success = true;
-              } catch (err) {
-                attempts++;
-                logger.warn(`Attempt ${attempts} failed to create KEP for company ${companyId}:`, err);
-                if (attempts === MAX_ATTEMPTS) {
-                  logger.error(`Failed to create KEP for company ${companyId} after ${MAX_ATTEMPTS} attempts.`);
-                }
-              }
+            try {
+              await this.UspaceClient.createKEPEntityForCompany(
+                companyId,
+                dto.title,
+                dto.owner,
+                dto.data_formuvannya,
+                dto.data_zakinchennya,
+                dto.tip,
+                dto.nosiy,
+              );
+            } catch (err) {
+              logger.error(`Failed to create KEP for company ${companyId}:`, err);
             }
           }
           logger.info("CRM KEPs updated for company:", companyId);
