@@ -186,6 +186,9 @@ class UspaceClient {
     if (typeof owner !== "string") {
       owner = String(owner);
     }
+    if (!nosiy) {
+      nosiy = "Невідомий";
+    }
 
     const options = {
       method: "POST",
